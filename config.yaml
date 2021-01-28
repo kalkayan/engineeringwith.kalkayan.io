@@ -1,7 +1,8 @@
-baseURL: "https://kalkayan.github.io"
+baseURL: "https://www.kalkayan.io"
 title: Manish Sahani
 paginate: 5
 theme: kalkayan.paper
+publishDir: docs
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -65,7 +66,7 @@ params:
       So far, It includes great things I learned while making software, breaking software,
       and making software to break softwares. 
 
-      
+
 
       I have interned at 
       [@adobe](https://www.adobe.com/), [@cncf (under kubernetes)](https://www.cncf.io/),
@@ -78,9 +79,9 @@ params:
     # - name: stackoverflow
     #   url: "https://stackoverflow.com"
     - name: github
-      url: "http://bit.ly/to-gh"
+      url: "https://bit.ly/to-gh"
     - name: linkedin
-      url: "http://bit.ly/to-lnkd"
+      url: "https://bit.ly/to-lnkd"
     - name: email
       url: "mailto:rec.manish.sahani@gmail.com"
 

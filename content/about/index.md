@@ -30,7 +30,7 @@ Worked as a backend engineer on the company’s main product - Grorapid (Marketi
 
 The Elekto Project develops Elekto, simple software for secure online elections. The project was developed under The Linux Foundation Mentorship (LFX) and is now a Cloud Native Computing (CNCF) Project. The project was mentored by [Josh Berkus](https://mentorship.lfx.linuxfoundation.org/mentor/681bd33c-52c8-450e-97d6-cf95d3493ac6), [Marky Jackson](https://mentorship.lfx.linuxfoundation.org/mentor/cbceda22-d448-4121-adc1-c4f793291bea), [Sergey Kanzhelev](https://mentorship.lfx.linuxfoundation.org/mentor/20ddefe1-872a-4077-ba0c-f85ebdfb7fd5)
 
-[View](http://elekto.io/)
+[View](https://elekto.io/)
 
 ### Thives of productivity
 
