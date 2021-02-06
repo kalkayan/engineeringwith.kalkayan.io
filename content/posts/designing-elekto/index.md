@@ -1,13 +1,23 @@
 ---
 Author: Manish Sahani
-title: "Designing the Elekto Project for CNCF"
+title: "Designing the Elekto Project under CNCF Internship"
 tags: ["System design", "flask", "gitops"]
 draft: true
 ---
 
-The Elekto Project develops Elekto, simple software for secure online elections. Elekto was created as part of an LFX internship for the Kubernetes project under the guidance of [Josh Berkus](https://mentorship.lfx.linuxfoundation.org/mentor/681bd33c-52c8-450e-97d6-cf95d3493ac6), [Marky Jackson](https://mentorship.lfx.linuxfoundation.org/mentor/cbceda22-d448-4121-adc1-c4f793291bea), [Sergey Kanzhelev](https://mentorship.lfx.linuxfoundation.org/mentor/20ddefe1-872a-4077-ba0c-f85ebdfb7fd5), and is now a CNCF infrastructure project.
+
+The Elekto Project develops Elekto - simple software for secure online elections. Elekto was created as part of an LFX internship for the Kubernetes project under the guidance of [Josh Berkus](https://mentorship.lfx.linuxfoundation.org/mentor/681bd33c-52c8-450e-97d6-cf95d3493ac6), [Marky Jackson](https://mentorship.lfx.linuxfoundation.org/mentor/cbceda22-d448-4121-adc1-c4f793291bea), [Sergey Kanzhelev](https://mentorship.lfx.linuxfoundation.org/mentor/20ddefe1-872a-4077-ba0c-f85ebdfb7fd5), and is now a CNCF infrastructure project.
 
 ![banner.png](images/banner.png)
+
+# Why Elekto?
+
+Kubernetes and several other projects use CIVS for running Steering Committee elections. The voting logic of CIVS works, but it has several severe shortcomings like:
+- It distributes all ballots by email, requiring tracking and handling of email addresses on a large scale.
+- Nobody in Kubernetes Test-Infra feels comfortable hosting a CIVS instance, as the project is written in outdated Perl (version 5.4 or something) and requires huge email traffic.
+- The public instance at Cornell is frequently abused for spam purposes.
+
+# Architecture 
 
 The general idea of the application is shown below. A seperate repository - k8s.elections.meta is maintained to keep track of all the meta files (.yaml) for elections, this repository serves as the single source of truth for the application's operation which is operated by gitops model. All the adminstrative tasks like creation of new elections, updation of voter's list, register of a candidate profile etc will be performed by raising specific pull requests in this repository. 
 
