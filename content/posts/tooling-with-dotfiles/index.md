@@ -6,7 +6,7 @@ description: >
 # ShowToc: true
 Params:
     cover: images/banner.jpg
-tags: ["tooling", "git"]
+tags: ["tooling", "git", "git-bare"]
 ---
 
 ![banner](images/banner.jpg)
