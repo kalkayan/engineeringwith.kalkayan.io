@@ -103,4 +103,4 @@ dotfiles checkout work
 
 # 
 
-We completed the first part of our tooling setup, next read - [Automate the setup of your development machine](http://localhost:1313/posts/automated-setup/).
+We completed the first part of our tooling setup, next read - [Automate the setup of your development machine](/posts/automated-setup/).
