@@ -3,7 +3,13 @@ author: Manish Sahani
 title: "Necessay tooling made easy with .files"
 description: >
     Many nights of potential productive work programmers have lost by procrastinating on properly managing their dotfiles. This article discusses an elegant way to manage and share dotfiles across machines using a single git repository.
+# ShowToc: true
+Params:
+    cover: images/banner.jpg
+tags: ["tooling"]
 ---
+
+![banner](images/banner.jpg)
 
 Customizing an operating system has always fascinated programmers. There are tons of great articles out there with great customization tips. Most of these articles use dotfiles for customization, and these simple invisible files may seem pointless for a novice. But, they become a swiss army knife if properly configured. 
 
@@ -11,11 +17,9 @@ Personalizing a system takes a lot of time and hard work, and nobody wishes to d
 
 This article will discuss an elegant way to manage, modify, and share dotfiles across multiple devices using a single `git` repository.
 
-![banner](images/banner.jpg)
+# Managing and tracking [dot]files
 
 The majority of developers use `git` to manage and share these files and use `symlinks` to sync them. Well, `symlinks` works, but it isn't the best way to sync your local files to the git repository. There are a good number of issues on [StackOverflow](https://stackoverflow.com/questions/46534290/symlink-dotfiles/64548852#64548852), pointing issues with dotfiles and symlinks. There is a much better solution to this, written by people at Atlassian -- [The best way to store your dotfiles: A bare Git repository ](https://www.atlassian.com/git/tutorials/dotfiles).
-
-# Managing and tracking [dot]files
 
 The trick to managing these dotfiles is by creating a [bare](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init) git repository. If you start from scratch, make a `bare` repository in the `$HOME` directory. 
 
@@ -48,16 +52,16 @@ dotfiles push origin main
 ```
 
 
-Let's look at the output of `dotfiles status`. We can see all files under `$HOME` directory are coming under untracked files (see the left side of screenshot below). We clearly don't want this behavior, and to fix this behavior, we modify the dotfiles repository status configs like below:
+If we look at the output of `dotfiles status`, We can see all files under `$HOME` directory are coming under untracked files (see the left side of screenshot below). We clearly don't want this behavior, and to fix this behavior, we modify the dotfiles repository status configs like below:
 
 ```
 # hides all the untracked files when status command is called
 dotfiles config status.showUntrackedFiles no
 ```
 
-![terminal-2.png](images/terminal.png)
+<!-- ![terminal-2.png](images/terminal.png) -->
 
-# Advantages and Use Cases of dotfiles with bare repository
+# Advantages and Use Cases
 
 Besides easier management and sharing, this method has various other advantages like:
 
@@ -96,3 +100,7 @@ Create configs based on your environment using `branch`, create a branch and con
 # Manage multiple profiles - check out to the work profile 
 dotfiles checkout work
 ```
+
+# 
+
+We completed the first part of our tooling setup, next read - [Automate the setup of your development machine](http://localhost:1313/posts/automated-setup/).
