@@ -71,17 +71,17 @@ params:
       I have interned at 
       [@adobe](https://www.adobe.com/), [@cncf (under kubernetes)](https://www.cncf.io/),
       and [@grorapid](https://www.grorapid.com/). Besides this, I'm an active contributor 
-      to may live opensource projects - [Read more about me]().
+      to may live opensource projects - [Read more about me](/about).
 
   socialIcons:
     # - name: twitter
     #   url: "https://twitter.com/"
-    # - name: stackoverflow
-    #   url: "https://stackoverflow.com"
     - name: github
       url: "https://bit.ly/to-gh"
     - name: linkedin
       url: "https://bit.ly/to-lnkd"
+    - name: stackoverflow
+      url: "https://stackoverflow.com/users/14526555/manish-sahani"
     - name: email
       url: "mailto:rec.manish.sahani@gmail.com"
 
