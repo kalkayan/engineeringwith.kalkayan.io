@@ -4,8 +4,7 @@ title: "Setting up a Development Machine [Part 2]: Vim + Bash Configurations"
 description: >
     Many nights of potential productive work programmers have lost by procrastinating on properly setting up a new machine's development environment. This series of articles discusses some elegant ways to set up your new device with one single command. 
 # ShowToc: true
-params:
-    series: 3
+draft: true
 tags: ["tooling", "git", "git-bare"]
 ---
 

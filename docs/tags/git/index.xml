@@ -6,11 +6,21 @@
     <description>Recent content in git on Manish Sahani</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.kalkayan.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Necessay tooling made easy with .files</title>
-      <link>https://www.kalkayan.io/posts/tooling-with-dotfiles/</link>
+      <title>Setting up a Development Machine [Part 1]: Automated Installation</title>
+      <link>https://www.kalkayan.io/posts/setting-up-a-development-machine-part-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kalkayan.io/posts/tooling-with-dotfiles/</guid>
+      <guid>https://www.kalkayan.io/posts/setting-up-a-development-machine-part-1/</guid>
+      <description>Setting up a new development machine is a long and painful process; nobody ever remembers what they have installed in their previous device. This guide is here to help you automate everything in your development setup and lets you enjoy the exciting feeling of getting a new machine.
+The guide has three parts: first is automating the installation of binaries and applications, then configuring code applications (vim, tmux, etc.) and customizing the operating system with dotfiles, and finally how to store and share them.</description>
+    </item>
+    
+    <item>
+      <title>Setting up a Development Machine [Part 3]: Dotfiles management</title>
+      <link>https://www.kalkayan.io/posts/setting-up-a-development-machine-part-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kalkayan.io/posts/setting-up-a-development-machine-part-3/</guid>
       <description>Customizing an operating system has always fascinated programmers. There are tons of great articles out there with great customization tips. Most of these articles use dotfiles for customization, and these simple invisible files may seem pointless for a novice. But, they become a swiss army knife if properly configured.
 Personalizing a system takes a lot of time and hard work, and nobody wishes to do it over and over again. Setting up a machine with a preferred setting should be done in minimal steps and without writing any code.</description>
     </item>

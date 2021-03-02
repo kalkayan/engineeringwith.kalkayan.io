@@ -1,77 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://www.kalkayan.io/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.kalkayan.io/posts/automated-setup/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.kalkayan.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.kalkayan.io/posts/designing-elekto/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.kalkayan.io/posts/designing-dtutimes/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.kalkayan.io/tags/draft/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.kalkayan.io/tags/flask/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.kalkayan.io/tags/git/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.kalkayan.io/tags/git-bare/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.kalkayan.io/tags/gitops/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.kalkayan.io/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.kalkayan.io/posts/tooling-with-dotfiles/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.kalkayan.io/tags/php/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.kalkayan.io/posts/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.kalkayan.io/tags/react/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.kalkayan.io/tags/system-design/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://www.kalkayan.io/posts/setting-up-a-development-machine-part-1/</loc>
+  </url><url>
+    <loc>https://www.kalkayan.io/posts/setting-up-a-development-machine-part-3/</loc>
+  </url><url>
     <loc>https://www.kalkayan.io/tags/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.kalkayan.io/tags/tooling/</loc>
   </url>
-  
 </urlset>

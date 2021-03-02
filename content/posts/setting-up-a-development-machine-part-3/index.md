@@ -4,8 +4,6 @@ title: "Setting up a Development Machine [Part 3]: Dotfiles management"
 description: >
     Many nights of potential productive work programmers have lost by procrastinating on properly managing their dotfiles. This article discusses an elegant way to manage and share dotfiles across machines using a single git repository.
 # ShowToc: true
-Params:
-    cover: images/banner.jpg
 tags: ["tooling", "git", "git-bare"]
 ---
 

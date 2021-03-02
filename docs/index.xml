@@ -18,43 +18,21 @@ Intern at Grorapid Worked as a backend engineer on the company’s main product 
     </item>
     
     <item>
-      <title>Automate the setup of your development machine</title>
-      <link>https://www.kalkayan.io/posts/automated-setup/</link>
+      <title>Setting up a Development Machine [Part 1]: Automated Installation</title>
+      <link>https://www.kalkayan.io/posts/setting-up-a-development-machine-part-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kalkayan.io/posts/automated-setup/</guid>
-      <description>In this section we&amp;rsquo;ll create a script (lets call it as setup) in $HOME directory to automate all the installations and other setup. Lets make a list of bins (available on brew) and casks that we want to install. In the setup file add two array - bins and casks.
-#!/bin/bash  # Brew casks and binaries that you need bins = ( &amp;#34;nvm&amp;#34; &amp;#34;php@7.4&amp;#34; &amp;#34;composer&amp;#34; # more valid brew formula here ) casks=( &amp;#34;slack&amp;#34; &amp;#34;postman&amp;#34; # add brew casks that you need  ) Compilers and Interpreters The first thing in the setup for any type of software development should be getting the language support - installating the compiler, interpreters etc.</description>
+      <guid>https://www.kalkayan.io/posts/setting-up-a-development-machine-part-1/</guid>
+      <description>Setting up a new development machine is a long and painful process; nobody ever remembers what they have installed in their previous device. This guide is here to help you automate everything in your development setup and lets you enjoy the exciting feeling of getting a new machine.
+The guide has three parts: first is automating the installation of binaries and applications, then configuring code applications (vim, tmux, etc.) and customizing the operating system with dotfiles, and finally how to store and share them.</description>
     </item>
     
     <item>
-      <title>Designing the Elekto Project under CNCF Internship</title>
-      <link>https://www.kalkayan.io/posts/designing-elekto/</link>
+      <title>Setting up a Development Machine [Part 3]: Dotfiles management</title>
+      <link>https://www.kalkayan.io/posts/setting-up-a-development-machine-part-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kalkayan.io/posts/designing-elekto/</guid>
-      <description>The Elekto Project develops Elekto - simple software for secure online elections. Elekto was created as part of an LFX internship for the Kubernetes project under the guidance of Josh Berkus, Marky Jackson, Sergey Kanzhelev, and is now a CNCF infrastructure project.
-Why Elekto? Kubernetes and several other projects use CIVS for running Steering Committee elections. The voting logic of CIVS works, but it has several severe shortcomings like:
- It distributes all ballots by email, requiring tracking and handling of email addresses on a large scale.</description>
-    </item>
-    
-    <item>
-      <title>Designing the Official Newsletter of Delhi Technological University</title>
-      <link>https://www.kalkayan.io/posts/designing-dtutimes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kalkayan.io/posts/designing-dtutimes/</guid>
-      <description>DTU Times is the official university newsletter of Delhi Technological University, Bawana, Delhi. We are a team of 70 people, among which seven are responsible for the development of Web and Mobile APP.
-DTU Times’s technology may look like a simple blog application but, for a university newsletter, it has a significantly large infrastructure consists of many services.
-Like most web-based blogs, the DTU Times backend started as a “monolithic” software with some servers and a single database.</description>
-    </item>
-    
-    <item>
-      <title>Necessay tooling made easy with .files</title>
-      <link>https://www.kalkayan.io/posts/tooling-with-dotfiles/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.kalkayan.io/posts/tooling-with-dotfiles/</guid>
+      <guid>https://www.kalkayan.io/posts/setting-up-a-development-machine-part-3/</guid>
       <description>Customizing an operating system has always fascinated programmers. There are tons of great articles out there with great customization tips. Most of these articles use dotfiles for customization, and these simple invisible files may seem pointless for a novice. But, they become a swiss army knife if properly configured.
 Personalizing a system takes a lot of time and hard work, and nobody wishes to do it over and over again. Setting up a machine with a preferred setting should be done in minimal steps and without writing any code.</description>
     </item>
