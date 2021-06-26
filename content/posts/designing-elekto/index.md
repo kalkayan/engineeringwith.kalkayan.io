@@ -1,27 +1,31 @@
 ---
 Author: Manish Sahani
 title: "Designing the Elekto Project under CNCF Internship"
+description: >
+    Many nights of potential productive work programmers have lost by procrastinating on properly managing their dotfiles. This article discusses an elegant way to manage and share dotfiles across machines using a single git repository.
 tags: ["System design", "flask", "gitops"]
 draft: true
+<!--cover: images/banner.png-->
+color: primary
 ---
-
 
 The Elekto Project develops Elekto - simple software for secure online elections. Elekto was created as part of an LFX internship for the Kubernetes project under the guidance of [Josh Berkus](https://mentorship.lfx.linuxfoundation.org/mentor/681bd33c-52c8-450e-97d6-cf95d3493ac6), [Marky Jackson](https://mentorship.lfx.linuxfoundation.org/mentor/cbceda22-d448-4121-adc1-c4f793291bea), [Sergey Kanzhelev](https://mentorship.lfx.linuxfoundation.org/mentor/20ddefe1-872a-4077-ba0c-f85ebdfb7fd5), and is now a CNCF infrastructure project.
 
-![banner.png](images/banner.png)
+<!--![banner.png]()-->
 
 # Why Elekto?
 
 Kubernetes and several other projects use CIVS for running Steering Committee elections. The voting logic of CIVS works, but it has several severe shortcomings like:
-- It distributes all ballots by email, requiring tracking and handling of email addresses on a large scale.
-- Nobody in Kubernetes Test-Infra feels comfortable hosting a CIVS instance, as the project is written in outdated Perl (version 5.4 or something) and requires huge email traffic.
-- The public instance at Cornell is frequently abused for spam purposes.
 
-# Architecture 
+-   It distributes all ballots by email, requiring tracking and handling of email addresses on a large scale.
+-   Nobody in Kubernetes Test-Infra feels comfortable hosting a CIVS instance, as the project is written in outdated Perl (version 5.4 or something) and requires huge email traffic.
+-   The public instance at Cornell is frequently abused for spam purposes.
 
-The general idea of the application is shown below. A seperate repository - k8s.elections.meta is maintained to keep track of all the meta files (.yaml) for elections, this repository serves as the single source of truth for the application's operation which is operated by gitops model. All the adminstrative tasks like creation of new elections, updation of voter's list, register of a candidate profile etc will be performed by raising specific pull requests in this repository. 
+# Architecture
 
-![arch.png](images/arch.png)
+The general idea of the application is shown below. A seperate repository - k8s.elections.meta is maintained to keep track of all the meta files (.yaml) for elections, this repository serves as the single source of truth for the application's operation which is operated by gitops model. All the adminstrative tasks like creation of new elections, updation of voter's list, register of a candidate profile etc will be performed by raising specific pull requests in this repository.
+
+<!--![arch.png](images/arch.png)-->
 
 After rasing a pull request, the gitops-bot will push events to the k8s.elections application (flask server) via web hooks. k8s.elections server is responsible for conducting the elections, receiving responses and computing the results.
 
@@ -29,14 +33,14 @@ The voters can only interact (browse/vote elections) with the application only a
 
 # Workflow
 
-The workflow of the application is divided in three sections depending on the stage of the election, which are 
+The workflow of the application is divided in three sections depending on the stage of the election, which are
 
 ### Before election started
 
 This parts is majorly handled with gitops, i.e., mostly adminstrative. Below is an sequence diagram to show the workflow for declare an election and other EO related tasks.
 
 | ![architecture.png](images/sequence-1.png) |
-| ------ |
+| ------------------------------------------ |
 
 ### Election in progress
 
@@ -45,9 +49,9 @@ The Election officers starts the election, and now the voters can login with the
 While the election is running the election officers can view the election stats several times from UI, and closes the election after the voting deadline is over.
 
 | ![architecture.png](images/sequence-2.png) |
-| ------ |
-<!-- | ![architecture.png](/static/sequence-diagram.png) |
-| ------ | -->
+| ------------------------------------------ | ------------------------------------------------- |
+| <!--                                       | ![architecture.png](/static/sequence-diagram.png) |
+| ------                                     | -->                                               |
 
 ### After Election
 
@@ -56,4 +60,4 @@ After the election ends an EO can see full election results in the web interface
 An EO can also download a CSV or YAML file of private election results for archiving that Would include same information as the full election results.
 
 | ![architecture.png](images/sequence-3.png) |
-| ------ |
+| ------------------------------------------ |

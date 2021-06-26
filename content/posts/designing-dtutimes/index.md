@@ -1,12 +1,14 @@
 ---
 Author: Manish Sahani
 title: "Designing the Official Newsletter of Delhi Technological University"
+description: >
+    Many nights of potential productive work programmers have lost by procrastinating on properly managing their dotfiles. This article discusses an elegant way to manage and share dotfiles across machines using a single git repository.
 tags: ["System design", "PHP", "React"]
 draft: true
+color: danger
 ---
 
 DTU Times is the official university newsletter of Delhi Technological University, Bawana, Delhi. We are a team of 70 people, among which seven are responsible for the development of Web and Mobile APP.
-
 
 DTU Times’s technology may look like a simple blog application but, for a university newsletter, it has a significantly large infrastructure consists of many services.
 

@@ -2,9 +2,9 @@
 author: Manish Sahani
 title: "Setting up a Development Machine [Part 1]: Automated Installation"
 description: >
-    Many nights of potential productive work programmers have lost by procrastinating on properly setting up a new machine's development environment. This is the first article of the series which discusses some elegant ways to set up your new device with one single command. 
-# ShowToc: true
+    Many nights of potential productive work programmers have lost by procrastinating on properly setting up a new machine's development environment. This is the first article of the series which discusses some elegant ways to set up your new device with one single command.
 tags: ["tooling", "git", "git-bare"]
+color: danger
 ---
 
 Setting up a new development machine is a long and painful process; nobody ever remembers what they have installed in their previous device. This guide is here to help you automate everything in your development setup and lets you enjoy the exciting feeling of getting a new machine.
@@ -15,9 +15,9 @@ The guide has three parts: first is automating the installation of binaries and 
 
 # Getting Started
 
-When you have a new MacBook, what is the first thing you do? (After posting its picture on LinkedIn): Download necessary apps like Spotify, Slack, VS Code, etc., right?. Visiting tens of websites and downloading dmgs was such a long, painful and tedious process until brew casks came into the picture. This feature of Homebrew gives us an excellent starting point for automating the setup process. 
+When you have a new MacBook, what is the first thing you do? (After posting its picture on LinkedIn): Download necessary apps like Spotify, Slack, VS Code, etc., right?. Visiting tens of websites and downloading dmgs was such a long, painful and tedious process until brew casks came into the picture. This feature of Homebrew gives us an excellent starting point for automating the setup process.
 
-We can have a small bash script and call Homebrew from there. Building on this idea, in this series, we'll write a script such that it can set up your brand new machine with just one command of the following structure. 
+We can have a small bash script and call Homebrew from there. Building on this idea, in this series, we'll write a script such that it can set up your brand new machine with just one command of the following structure.
 
 ```bash
 curl -fsSL https://example.com/setup.sh | bash
@@ -51,12 +51,12 @@ Then we install a system package manager -- Homebrew, using the similar if-then 
 
 # Install xcode command line tool if ....
 
-# Install brew.sh (system package manager) if already not installed         
-if ! brew -h 1>/dev/null; then                                                                                                                                                                              
-    echo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"                                                                                                  
+# Install brew.sh (system package manager) if already not installed
+if ! brew -h 1>/dev/null; then
+    echo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
-# Update brew to latest available version              
+# Update brew to latest available version
 brew update
 ```
 
@@ -64,20 +64,20 @@ After installing brew, we run `brew update` to ensure we have the latest version
 
 # Installing Applications and libraries
 
-In this section, We deal with installing applications and libraries, and  I'll show you one of the coolest ways to manage and automate this process with just a few bash lines.
+In this section, We deal with installing applications and libraries, and I'll show you one of the coolest ways to manage and automate this process with just a few bash lines.
 
 It is hard to remember what applications and libraries we had previously installed. Homebrew has `homebrew-bundle` to take care of this by dumping all the installed taps, bins, and casks in a `Brewfile` which can install all these in the future. The problem here is that `Brewfile` doesn't store versions of the bins or casks. It installs the latest version of the binaries, which can sometimes cause you trouble. For example, if you have PHP installed -- or in general software that doesn't have backward compatibility.
 
-To solve this problem of versioning, let us start from the most straightforward thing and create a list of binaries and casks that we need (name it `bins.txt` and `casks.txt`).  
+To solve this problem of versioning, let us start from the most straightforward thing and create a list of binaries and casks that we need (name it `bins.txt` and `casks.txt`).
 
 ```bash
-touch $HOME/.config/kalkayan/bins.txt $HOME/.config/kalkayan/casks.txt 
+touch $HOME/.config/kalkayan/bins.txt $HOME/.config/kalkayan/casks.txt
 ```
 
 We list down all the brew formulas for binaries and casks with their versions that we want to have in our system in their specific file. for example --
 
 ```
-hades in ~ $ cat $HOME/.config/kalkayan/bins.txt     
+hades in ~ $ cat $HOME/.config/kalkayan/bins.txt
 coreutils
 llvm
 go
@@ -96,13 +96,13 @@ To automate these bins and casks' installation, we need to import these lists in
 # Install brew.sh (system package manager)....
 
 # List of binaries that needs be installed
-mapfile -t bins <  <(cat $HOME/.config/kalkayan/bins.txt) 
+mapfile -t bins <  <(cat $HOME/.config/kalkayan/bins.txt)
 
 # List of casks that needs be installed
-mapfile -t casks < <(cat $HOME/.config/kalkayan/casks.txt) 
+mapfile -t casks < <(cat $HOME/.config/kalkayan/casks.txt)
 ```
 
-Now we iterate over these arrays and check for the library if already installed. If not, we install it using brew.  In the following code, first, we split the name at `@` and take the first (example -- `php` in `php@7.4` )
+Now we iterate over these arrays and check for the library if already installed. If not, we install it using brew. In the following code, first, we split the name at `@` and take the first (example -- `php` in `php@7.4` )
 
 ```bash
 # List of casks ....
@@ -134,3 +134,4 @@ done
 ```
 
 In the second part of this series, we'll create a bash function to update our bins.txt and casks.txt when a bin/cask is installed or removed.
+

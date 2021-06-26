@@ -1,5 +1,5 @@
-baseURL: "https://www.kalkayan.io"
-title: Manish Sahani
+baseURL: "https://engineering.kalkayan.io"
+title: Kalkayan Engineering
 paginate: 5
 theme: kalkayan.paper
 publishDir: docs
@@ -17,12 +17,12 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Manish Sahani
+  title: More you read here, less you write there
   description: >
-    Manish's protfolio and writings on experiences from working at adobe, 
+    Manish's protfolio and writings on experiences from working at adobe,
     cncf and grorapid.
-  author: Manish Sahani
-  # author: ["Me", "You"] # multiple authors
+  editor: Manish Sahani
+  author: ["Manish"] # multiple authors
 
   images: ["<link or path of image for opengraph, twitter-cards>"]
 
@@ -62,18 +62,18 @@ params:
     #Title: "How are you gonna be a revolutionary if you're such a traditionalist?"
     Title: "The Experiences to remember"
     Content: >
-      **Hi, I'm Manish**, This website is the sum of my experiences. 
+      **Hi, I'm Manish**, This website is the sum of my experiences.
       So far, It includes great things I learned while making software, breaking software,
-      and making software to break softwares. 
+      and making software to break softwares.
 
 
 
-      I have interned at 
+      I have interned at
       [@adobe](https://www.adobe.com/), [@cncf (under kubernetes)](https://www.cncf.io/),
-      and [@grorapid](https://www.grorapid.com/). Besides this, I'm an active contributor 
+      and [@grorapid](https://www.grorapid.com/). Besides this, I'm an active contributor
       to may live opensource projects - [Read more about me](/about).
 
-  socialIcons:
+  social:
     # - name: twitter
     #   url: "https://twitter.com/"
     - name: github
