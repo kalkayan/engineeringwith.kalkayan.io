@@ -4,6 +4,7 @@ title: "Designing the Elekto Project under CNCF Internship"
 description: >
     Many nights of potential productive work programmers have lost by procrastinating on properly managing their dotfiles. This article discusses an elegant way to manage and share dotfiles across machines using a single git repository.
 tags: ["System design", "flask", "gitops"]
+categories: "System Designing"
 draft: true
 <!--cover: images/banner.png-->
 color: primary
@@ -39,8 +40,7 @@ The workflow of the application is divided in three sections depending on the st
 
 This parts is majorly handled with gitops, i.e., mostly adminstrative. Below is an sequence diagram to show the workflow for declare an election and other EO related tasks.
 
-| ![architecture.png](images/sequence-1.png) |
-| ------------------------------------------ |
+![architecture.png](images/sequence-1.png)
 
 ### Election in progress
 
