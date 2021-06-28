@@ -22,7 +22,7 @@ taxonomies:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: More you read here, less you write there
+  title: More you read here, less you write there.
   description: >
     Manish's protfolio and writings on experiences from working at adobe,
     cncf and grorapid.

@@ -1,9 +1,12 @@
 ---
 author: Manish Sahani
-title: "Setting up a Development Machine [Part 1]: Automated Installation"
+title: "Automated Installation"
 description: >
     Many nights of potential productive work programmers have lost by procrastinating on properly setting up a new machine's development environment. This is the first article of the series which discusses some elegant ways to set up your new device with one single command.
 tags: ["tooling", "git", "git-bare"]
+series: ["Setting up a Development Machine"]
+categories: "Tooling"
+
 color: danger
 ---
 
@@ -134,4 +137,3 @@ done
 ```
 
 In the second part of this series, we'll create a bash function to update our bins.txt and casks.txt when a bin/cask is installed or removed.
-
