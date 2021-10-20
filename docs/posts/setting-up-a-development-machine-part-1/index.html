@@ -1,14 +1,71 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Kalkayan Engineering</title><link rel=stylesheet href=https://engineering.kalkayan.io/scss/main.min.2ebdcacefa1b667eda7934ce824bf6f5f7ef87d46e0b54c93fc40b91a3c2c9aa.css><script src=https://engineering.kalkayan.io/js/bootstrap.min.js></script></head><body id=top><nav class="navbar navbar-expand-lg navbar-light fixed-top pt-2 pb-2"><div class=container><a class="nav-link text-muted p-0" href=#><img src=/logo-eng.png width=200 alt srcset></a>
-<button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
-<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarSupportedContent><ul class=navbar-nav style=margin-left:auto><li class="nav-item active"><a class=nav-link href=#>Home</a></li><li class=nav-item><a class=nav-link href=https://github.com/kalkayan/dotfiles>github</a></li></ul></div></div></div></nav><main class=main><article><div class=banner><div class=container><div class="col-md-10 text-center offset-md-1"><h1 class=title style="font-size:calc(80px - 2px)">Automated Installation</h1><p>Many nights of potential productive work programmers have lost by procrastinating on properly setting up a new machine's development environment. This is the first article of the series which discusses some elegant ways to set up your new device with one single command.</p></div></div></div><div class=post><div class=container><div class="description col-10 offset-md-1">Many nights of potential productive work programmers have lost by procrastinating on properly setting up a new machine's development environment. This is the first article of the series which discusses some elegant ways to set up your new device with one single command.</div><div class="content col-10 offset-md-1 pb-5 mb-5"><p>Setting up a new development machine is a long and painful process; nobody ever remembers what they have installed in their previous device. This guide is here to help you automate everything in your development setup and lets you enjoy the exciting feeling of getting a new machine.</p><p>The guide has three parts: first is automating the installation of binaries and applications, then configuring code applications (vim, tmux, etc.) and customizing the operating system with dotfiles, and finally how to store and share them. I&rsquo;ll set up a MacBook Pro in all the articles, but you can always expand it to other surfaces like Linux.</p><h1 id=getting-started>Getting Started<a hidden class=anchor aria-hidden=true href=#getting-started>#</a></h1><p>When you have a new MacBook, what is the first thing you do? (After posting its picture on LinkedIn): Download necessary apps like Spotify, Slack, VS Code, etc., right?. Visiting tens of websites and downloading dmgs was such a long, painful and tedious process until brew casks came into the picture. This feature of Homebrew gives us an excellent starting point for automating the setup process.</p><p>We can have a small bash script and call Homebrew from there. Building on this idea, in this series, we&rsquo;ll write a script such that it can set up your brand new machine with just one command of the following structure.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>curl -fsSL https://example.com/setup.sh | bash
-</code></pre></div><p>Let&rsquo;s create this <code>setup</code> script in the $HOME directory, which will automate our future set-up process.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>touch $HOME/setup
-</code></pre></div><h1 id=neccessay-tools-and-a-package-manager>Neccessay tools and a Package Manager<a hidden class=anchor aria-hidden=true href=#neccessay-tools-and-a-package-manager>#</a></h1><p>We need to install XCode command-line tools, which install all the common and necessary things like macOS SDK, headers, build tools, compilers, interpreters, etc. Add the following in the previously created script:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#!/usr/bin/env bash
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Many nights of potential productive work programmers have lost by procrastinating on properly setting up a new machine's development environment. This is the first article of the series which discusses some elegant ways to set up your new device with one single command.
+">
+<title>Automated Installation &#183; Kalkayan Engineering</title>
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/fonts.css>
+<link rel=stylesheet href=/custom.css>
+<link rel=icon href=favicon.ico>
+<link rel=icon type=image/png sizes=32x32 href=/images/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/images/favicon-16x16.png>
+<link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png>
+<link href rel=alternate type=application/rss+xml title="Kalkayan Engineering">
+</head>
+<body>
+<nav class=nav>
+<div class=nav-container>
+<a href=/>
+<img class=logo src=/logo-eng.png alt>
+</a>
+<ul>
+<li>
+<a href=/about/>
+<span>About</span>
+</a>
+</li>
+<li>
+<a href=/categories/>
+<span>Categories</span>
+</a>
+</li>
+<li>
+<a href=/posts/>
+<span>Posts</span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<main>
+<div class=post>
+<div class=post-info>
+<span>Written by</span>
+Manish Sahani
+</div>
+<h1 class=post-title>Automated Installation</h1>
+<div class=post-line></div>
+<p>Setting up a new development machine is a long and painful process; nobody ever remembers what they have installed in their previous device. This guide is here to help you automate everything in your development setup and lets you enjoy the exciting feeling of getting a new machine.</p>
+<p>The guide has three parts: first is automating the installation of binaries and applications, then configuring code applications (vim, tmux, etc.) and customizing the operating system with dotfiles, and finally how to store and share them. I&rsquo;ll set up a MacBook Pro in all the articles, but you can always expand it to other surfaces like Linux.</p>
+<h1 id=getting-started>Getting Started</h1>
+<p>When you have a new MacBook, what is the first thing you do? (After posting its picture on LinkedIn): Download necessary apps like Spotify, Slack, VS Code, etc., right?. Visiting tens of websites and downloading dmgs was such a long, painful and tedious process until brew casks came into the picture. This feature of Homebrew gives us an excellent starting point for automating the setup process.</p>
+<p>We can have a small bash script and call Homebrew from there. Building on this idea, in this series, we&rsquo;ll write a script such that it can set up your brand new machine with just one command of the following structure.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>curl -fsSL https://example.com/setup.sh | bash
+</code></pre></div><p>Let&rsquo;s create this <code>setup</code> script in the $HOME directory, which will automate our future set-up process.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>touch $HOME/setup
+</code></pre></div><h1 id=neccessay-tools-and-a-package-manager>Neccessay tools and a Package Manager</h1>
+<p>We need to install XCode command-line tools, which install all the common and necessary things like macOS SDK, headers, build tools, compilers, interpreters, etc. Add the following in the previously created script:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#!/usr/bin/env bash
 </span><span style=color:#75715e></span>
 <span style=color:#75715e># Install xcode command line tool if not already installed</span>
 <span style=color:#66d9ef>if</span> ! xcode-select -p 1&gt;/dev/null; <span style=color:#66d9ef>then</span>
     xcode-select --install
 <span style=color:#66d9ef>fi</span>
-</code></pre></div><p>First, the above lines check for xcode-select&rsquo;s path (<code>-p</code> is for printing the path of the active developer directory), and if not present, it installs using the <code>--install</code> flag.</p><p>Then we install a system package manager &ndash; Homebrew, using the similar if-then structure.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#!/usr/bin/env bash
+</code></pre></div><p>First, the above lines check for xcode-select&rsquo;s path (<code>-p</code> is for printing the path of the active developer directory), and if not present, it installs using the <code>--install</code> flag.</p>
+<p>Then we install a system package manager &ndash; Homebrew, using the similar if-then structure.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#!/usr/bin/env bash
 </span><span style=color:#75715e></span>
 <span style=color:#75715e># Install xcode command line tool if ....</span>
 
@@ -19,15 +76,22 @@
 
 <span style=color:#75715e># Update brew to latest available version</span>
 brew update
-</code></pre></div><p>After installing brew, we run <code>brew update</code> to ensure we have the latest version installed.</p><h1 id=installing-applications-and-libraries>Installing Applications and libraries<a hidden class=anchor aria-hidden=true href=#installing-applications-and-libraries>#</a></h1><p>In this section, We deal with installing applications and libraries, and I&rsquo;ll show you one of the coolest ways to manage and automate this process with just a few bash lines.</p><p>It is hard to remember what applications and libraries we had previously installed. Homebrew has <code>homebrew-bundle</code> to take care of this by dumping all the installed taps, bins, and casks in a <code>Brewfile</code> which can install all these in the future. The problem here is that <code>Brewfile</code> doesn&rsquo;t store versions of the bins or casks. It installs the latest version of the binaries, which can sometimes cause you trouble. For example, if you have PHP installed &ndash; or in general software that doesn&rsquo;t have backward compatibility.</p><p>To solve this problem of versioning, let us start from the most straightforward thing and create a list of binaries and casks that we need (name it <code>bins.txt</code> and <code>casks.txt</code>).</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>touch $HOME/.config/kalkayan/bins.txt $HOME/.config/kalkayan/casks.txt
-</code></pre></div><p>We list down all the brew formulas for binaries and casks with their versions that we want to have in our system in their specific file. for example &ndash;</p><pre><code>hades in ~ $ cat $HOME/.config/kalkayan/bins.txt
+</code></pre></div><p>After installing brew, we run <code>brew update</code> to ensure we have the latest version installed.</p>
+<h1 id=installing-applications-and-libraries>Installing Applications and libraries</h1>
+<p>In this section, We deal with installing applications and libraries, and I&rsquo;ll show you one of the coolest ways to manage and automate this process with just a few bash lines.</p>
+<p>It is hard to remember what applications and libraries we had previously installed. Homebrew has <code>homebrew-bundle</code> to take care of this by dumping all the installed taps, bins, and casks in a <code>Brewfile</code> which can install all these in the future. The problem here is that <code>Brewfile</code> doesn&rsquo;t store versions of the bins or casks. It installs the latest version of the binaries, which can sometimes cause you trouble. For example, if you have PHP installed &ndash; or in general software that doesn&rsquo;t have backward compatibility.</p>
+<p>To solve this problem of versioning, let us start from the most straightforward thing and create a list of binaries and casks that we need (name it <code>bins.txt</code> and <code>casks.txt</code>).</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>touch $HOME/.config/kalkayan/bins.txt $HOME/.config/kalkayan/casks.txt
+</code></pre></div><p>We list down all the brew formulas for binaries and casks with their versions that we want to have in our system in their specific file. for example &ndash;</p>
+<pre tabindex=0><code>hades in ~ $ cat $HOME/.config/kalkayan/bins.txt
 coreutils
 llvm
 go
 php@7.4
 nvm
 ...
-</code></pre><p>To automate these bins and casks' installation, we need to import these lists in our <code>setup</code> script. <code>mapfile</code> creates an array from the file, and now we have our list store in collections named <code>bins</code> and <code>casks</code>.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#!/usr/bin/env bash
+</code></pre><p>To automate these bins and casks' installation, we need to import these lists in our <code>setup</code> script. <code>mapfile</code> creates an array from the file, and now we have our list store in collections named <code>bins</code> and <code>casks</code>.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#!/usr/bin/env bash
 </span><span style=color:#75715e></span>
 <span style=color:#75715e># Install xcode command line tool if....</span>
 
@@ -38,7 +102,8 @@ mapfile -t bins &lt;  &lt;<span style=color:#f92672>(</span>cat $HOME/.config/ka
 
 <span style=color:#75715e># List of casks that needs be installed</span>
 mapfile -t casks &lt; &lt;<span style=color:#f92672>(</span>cat $HOME/.config/kalkayan/casks.txt<span style=color:#f92672>)</span>
-</code></pre></div><p>Now we iterate over these arrays and check for the library if already installed. If not, we install it using brew. In the following code, first, we split the name at <code>@</code> and take the first (example &ndash; <code>php</code> in <code>php@7.4</code> )</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># List of casks ....</span>
+</code></pre></div><p>Now we iterate over these arrays and check for the library if already installed. If not, we install it using brew. In the following code, first, we split the name at <code>@</code> and take the first (example &ndash; <code>php</code> in <code>php@7.4</code> )</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># List of casks ....</span>
 
 <span style=color:#75715e># Install binaries using Homebrew, iterate over bins array and install.</span>
 <span style=color:#66d9ef>for</span> binary in <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>bins[@]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>; <span style=color:#66d9ef>do</span>
@@ -50,7 +115,8 @@ mapfile -t casks &lt; &lt;<span style=color:#f92672>(</span>cat $HOME/.config/ka
         brew install <span style=color:#e6db74>&#34;</span>$binary<span style=color:#e6db74>&#34;</span>
     <span style=color:#66d9ef>fi</span>
 <span style=color:#66d9ef>done</span>
-</code></pre></div><p>Similarly, we write a loop for casks but without worrying about the versions (can be extended if required)</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># Install binaries using Homebrew, ....</span>
+</code></pre></div><p>Similarly, we write a loop for casks but without worrying about the versions (can be extended if required)</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># Install binaries using Homebrew, ....</span>
 
 <span style=color:#75715e># Install casks using Homebrew, iterate over casks array and install.</span>
 <span style=color:#66d9ef>for</span> c in <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>casks[@]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>; <span style=color:#66d9ef>do</span>
@@ -59,6 +125,17 @@ mapfile -t casks &lt; &lt;<span style=color:#f92672>(</span>cat $HOME/.config/ka
         brew casks install <span style=color:#e6db74>&#34;</span>$c<span style=color:#e6db74>&#34;</span>
     <span style=color:#66d9ef>fi</span>
 <span style=color:#66d9ef>done</span>
-</code></pre></div><p>In the second part of this series, we&rsquo;ll create a bash function to update our bins.txt and casks.txt when a bin/cask is installed or removed.</p></div></div></div></article><footer class=footer><div class=container><div class="row border-bottom mb-3"><div class=col-md-8><img src=/logo-eng.png width=400 alt srcset><p class=pb-1>This is the place where I, <a href=/about>Manish Sahani</a>, write my engineering experiences.</p></div><div class=col-md-4><div class=social-icons><a href=https://bit.ly/to-gh target=_blank rel="noopener noreferrer me" title=Github><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg></a><a href=https://bit.ly/to-lnkd target=_blank rel="noopener noreferrer me" title=Linkedin><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href=https://stackoverflow.com/users/14526555/manish-sahani target=_blank rel="noopener noreferrer me" title=Stackoverflow><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.913 16.041v6.848h17.599v-6.848M7.16 18.696h8.925M7.65 13.937l8.675 1.8M9.214 9.124l8.058 3.758M12.086 4.65l6.849 5.66M15.774 1.111l5.313 7.162"/></svg></a><a href=mailto:rec.manish.sahani@gmail.com target=_blank rel="noopener noreferrer me" title=Email><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1.0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1.0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></div></div></div><div class=row><div class=col-md-4><strong>Categories</strong><p class=text-muted><a class="text-muted text-decoration-none" href=https://engineering.kalkayan.io/categories/tooling/>Tooling</a><br></p></div><div class=col-md-4><strong>Series</strong></div><div class=col-md-4><strong>Tags</strong><p class=text-muted><a class="text-muted text-decoration-none" href=https://engineering.kalkayan.io/tags/git/>git</a><br><a class="text-muted text-decoration-none" href=https://engineering.kalkayan.io/tags/git-bare/>git-bare</a><br><a class="text-muted text-decoration-none" href=https://engineering.kalkayan.io/tags/tooling/>tooling</a><br></p></div></div><p><span>Powered by <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a></span>
-<span>&#183;</span>
-<span>Theme <a href=https://git.io/hugopapermod rel=noopener target=_blank>Kalkayan.eng</a></span></p></div></footer><script>let scrollpos=window.scrollY;const header=document.querySelector("nav"),add_class_on_scroll=a=>header.classList.add(a),remove_class_on_scroll=a=>header.classList.remove(a);window.addEventListener('scroll',function(){scrollpos=window.scrollY,scrollpos>='100'?add_class_on_scroll("bg-white"):remove_class_on_scroll("bg-white"),scrollpos>='400'?add_class_on_scroll("shadow-sm"):remove_class_on_scroll("shadow-sm")})</script></main></body></html>
+</code></pre></div><p>In the second part of this series, we&rsquo;ll create a bash function to update our bins.txt and casks.txt when a bin/cask is installed or removed.</p>
+</div>
+<div class=pagination>
+<a href=/posts/setting-up-a-development-machine-part-3/ class="left arrow">&#8592;</a>
+<a href=# class=top>Top</a>
+</div>
+</main>
+<footer>
+<span>
+&copy; <time datetime="2021-10-20 17:24:07.264009 +0530 IST m=+0.064020178">2021</time> . Made with <a href=https://gohugo.io>Hugo</a> using the <a href=https://github.com/EmielH/tale-hugo/>Tale</a> theme.
+</span>
+</footer>
+</body>
+</html>
