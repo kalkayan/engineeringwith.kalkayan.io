@@ -1,7 +1,7 @@
 baseURL: "https://engineering.kalkayan.io"
 title: Kalkayan Engineering
 paginate: 5
-theme: kalkayan.paper
+theme: tale
 publishDir: docs
 
 enableRobotsTXT: true
@@ -21,6 +21,7 @@ taxonomies:
   tag: tags
 
 params:
+  css: ["custom.css"]
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: More you read here, less you write there.
   description: >
