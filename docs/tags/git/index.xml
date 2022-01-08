@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>git on Kalkayan Engineering</title>
+    <title>git on Engineering w/Kalkayan</title>
     <link>https://engineering.kalkayan.io/tags/git/</link>
-    <description>Recent content in git on Kalkayan Engineering</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://engineering.kalkayan.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in git on Engineering w/Kalkayan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://engineering.kalkayan.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automated Installation</title>
       <link>https://engineering.kalkayan.io/posts/setting-up-a-development-machine-part-1/</link>

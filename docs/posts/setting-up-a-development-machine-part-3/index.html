@@ -1,147 +1,230 @@
-<!doctype html><html lang=en>
-<head>
-<meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
-<title>
-Dotfiles Management | Kalkayan Engineering
-</title>
-<meta name=viewport content="width=device-width,minimum-scale=1">
-<meta name=description content="Many nights of potential productive work programmers have lost by procrastinating on properly managing their dotfiles. This article discusses an elegant way to manage and share dotfiles across machines using a single git repository.
+<!DOCTYPE html>
+<html lang="en-us">
+     
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    
+    <title>
+        Dotfiles Management | Engineering w/Kalkayan
+    </title>
+
+    
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Many nights of potential productive work programmers have lost by procrastinating on properly managing their dotfiles. This article discusses an elegant way to manage and share dotfiles across machines using a single git repository.
 ">
-<meta name=generator content="Hugo 0.89.4">
-<meta name=ROBOTS content="INDEX, FOLLOW">
-<link rel=stylesheet href=/css/styles.min.css media=screen>
-<script src=https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js integrity=sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p crossorigin=anonymous></script>
+
+    <meta name="generator" content="Hugo 0.89.4" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/styles.min.css" media="screen">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+
 </head>
-<body class=seyx>
-<nav class="navbar navbar-expand-lg navbar-light bg-white p-4 border-bottom">
-<div class=container>
-<a class="navbar-brand typo-gradient" href=#>Kalkayan Engineering</a>
-<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarNav aria-controls=navbarNav aria-expanded=false aria-label="Toggle navigation">
-<span class=navbar-toggler-icon></span>
-</button>
-<div class="collapse navbar-collapse" id=navbarNav>
-<ul class="navbar-nav ms-md-4 me-auto">
-<li class=nav-item>
-<a class=nav-link href=#>Posts</a>
-</li>
-<li class=nav-item>
-<a class=nav-link href=#>Interviews</a>
-</li>
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href=# id=navbarDropdown role=button data-bs-toggle=dropdown aria-expanded=false>
-Dropdown
-</a>
-<ul class=dropdown-menu aria-labelledby=navbarDropdown>
-<li><a class=dropdown-item href=#>Action</a></li>
-<li><a class=dropdown-item href=#>Another action</a></li>
-<li><hr class=dropdown-divider></li>
-<li><a class=dropdown-item href=#>Something else here</a></li>
-</ul>
-</li>
-</ul>
-<ul class="navbar-nav ms-auto">
-<li class="nav-item me-4">
-<a class=nav-link href=#>About Me</a>
-</li>
-<li class="nav-item my-auto">
-<a href=align-middle><svg style="enable-background:new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M256 32C132.3 32 32 134.8 32 261.7c0 101.5 64.2 187.5 153.2 217.9 11.2 2.1 15.3-5 15.3-11.1.0-5.5-.2-19.9-.3-39.1-62.3 13.9-75.5-30.8-75.5-30.8-10.2-26.5-24.9-33.6-24.9-33.6-20.3-14.3 1.5-14 1.5-14 22.5 1.6 34.3 23.7 34.3 23.7 20 35.1 52.4 25 65.2 19.1 2-14.8 7.8-25 14.2-30.7-49.7-5.8-102-25.5-102-113.5.0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8.0.0 18.8-6.2 61.6 23.5 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 42.8-29.7 61.5-23.5 61.5-23.5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6.0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5.0 30.7-.3 55.5-.3 63 0 6.1 4 13.3 15.4 11C415.9 449.1 480 363.1 480 261.7 480 134.8 379.7 32 256 32z"/></svg>
-</a>
-<a href=align-middle><svg style="enable-background:new 0 0 65 65" viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M50.837 48.137V36.425c0-6.275-3.35-9.195-7.816-9.195-3.604.0-5.219 1.983-6.119 3.374V27.71h-6.79c.09 1.917.0 20.427.0 20.427h6.79V36.729c0-.609.044-1.219.224-1.655.49-1.22 1.607-2.483 3.482-2.483 2.458.0 3.44 1.873 3.44 4.618v10.929H50.837zM22.959 24.922c2.367.0 3.842-1.57 3.842-3.531-.044-2.003-1.475-3.528-3.797-3.528s-3.841 1.524-3.841 3.528c0 1.961 1.474 3.531 3.753 3.531H22.959zM34 64C17.432 64 4 50.568 4 34 4 17.431 17.432 4 34 4s30 13.431 30 30c0 16.568-13.432 30-30 30zM26.354 48.137V27.71h-6.789v20.427h6.789z" style="fill-rule:evenodd;clip-rule:evenodd;fill:"/></svg>
-</a>
-<a href=align-middle><svg style="enable-background:new 0 0 67 67" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.373.0.0 5.373.0 12s5.373 12 12 12 12-5.373 12-12S18.627.0 12 0zm.869 5.903 3.114 4.567-.975.665-3.115-4.567.976-.665zm-2.812 2.585 4.84 2.838-.6 1.017-4.842-2.838.602-1.017zm-1.276 2.724 5.413 1.521-.291 1.077-5.428-1.458.306-1.14zm-.588 2.461 5.687.569-.103 1.12-5.691-.513.107-1.176zm-.169 2.16h5.835V17H8.024v-1.167zM16 19H6v-6h1v5h8v-5h1v6zm.195-8.602-.945-5.446 1.162-.202.947 5.446-1.164.202z"/></svg>
-</a>
-</li>
-</ul>
-</div>
-</div>
+<body class="seyx">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-4 border-bottom">
+  <div class="container">
+    <a class="navbar-brand typo-gradient" href="#">Engineering w/Kalkayan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-md-4 me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Interviews</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item me-4">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item my-auto">
+            
+            <a href="align-middle">
+                <svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path fill="" d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+            </a>
+            
+            <a href="align-middle">
+                <svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+            </a>
+            
+            <a href="align-middle">
+                <svg viewBox="0 0 256 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+    <g>
+        <path d="M256,25.4500259 C246.580841,29.6272672 236.458451,32.4504868 225.834156,33.7202333 C236.678503,27.2198053 245.00583,16.9269929 248.927437,4.66307685 C238.779765,10.6812633 227.539325,15.0523376 215.57599,17.408298 C205.994835,7.2006971 192.34506,0.822 177.239197,0.822 C148.232605,0.822 124.716076,24.3375931 124.716076,53.3423116 C124.716076,57.4586875 125.181462,61.4673784 126.076652,65.3112644 C82.4258385,63.1210453 43.7257252,42.211429 17.821398,10.4359288 C13.3005011,18.1929938 10.710443,27.2151234 10.710443,36.8402889 C10.710443,55.061526 19.9835254,71.1374907 34.0762135,80.5557137 C25.4660961,80.2832239 17.3681846,77.9207088 10.2862577,73.9869292 C10.2825122,74.2060448 10.2825122,74.4260967 10.2825122,74.647085 C10.2825122,100.094453 28.3867003,121.322443 52.413563,126.14673 C48.0059695,127.347184 43.3661509,127.988612 38.5755734,127.988612 C35.1914554,127.988612 31.9009766,127.659938 28.694773,127.046602 C35.3777973,147.913145 54.7742053,163.097665 77.7569918,163.52185 C59.7820257,177.607983 37.1354036,186.004604 12.5289147,186.004604 C8.28987161,186.004604 4.10888474,185.75646 0,185.271409 C23.2431033,200.173139 50.8507261,208.867532 80.5109185,208.867532 C177.116529,208.867532 229.943977,128.836982 229.943977,59.4326002 C229.943977,57.1552968 229.893412,54.8901664 229.792282,52.6381454 C240.053257,45.2331635 248.958338,35.9825545 256,25.4500259" ></path>
+    </g>
+</svg>
+            </a>
+            
+            <a href="align-middle">
+                <svg style="enable-background:new 65 65 150 135;" version="1.1" viewBox="65 65 150 135"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<g>
+	<g>
+		<path class="st0" d="M99.4,151.2c0,7.1-5.8,12.9-12.9,12.9s-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h12.9V151.2z"/>
+		<path class="st0" d="M105.9,151.2c0-7.1,5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v32.3c0,7.1-5.8,12.9-12.9,12.9
+			s-12.9-5.8-12.9-12.9C105.9,183.5,105.9,151.2,105.9,151.2z"/>
+	</g>
+	<g>
+		<path class="st0" d="M118.8,99.4c-7.1,0-12.9-5.8-12.9-12.9s5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v12.9H118.8z"/>
+		<path class="st0" d="M118.8,105.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9H86.5c-7.1,0-12.9-5.8-12.9-12.9
+			s5.8-12.9,12.9-12.9C86.5,105.9,118.8,105.9,118.8,105.9z"/>
+	</g>
+	<g>
+		<path class="st0" d="M170.6,118.8c0-7.1,5.8-12.9,12.9-12.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9h-12.9V118.8z"/>
+		<path class="st0" d="M164.1,118.8c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9V86.5c0-7.1,5.8-12.9,12.9-12.9
+			c7.1,0,12.9,5.8,12.9,12.9V118.8z"/>
+	</g>
+	<g>
+		<path class="st0" d="M151.2,170.6c7.1,0,12.9,5.8,12.9,12.9c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9v-12.9H151.2z"/>
+		<path class="st0" d="M151.2,164.1c-7.1,0-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h32.3c7.1,0,12.9,5.8,12.9,12.9
+			c0,7.1-5.8,12.9-12.9,12.9H151.2z"/>
+	</g>
+</g>
+</svg>
+
+            </a>
+            
+        </li> 
+      </ul>
+    </div>
+  </div>
 </nav>
-<div id=content>
+<div id="content">
+
 <section class="section section-single space--lg border-bottom home bg-white">
-<div class=container>
-<div class=row>
-<div class=col-md-8>
-<h1 class="typo-xl mb-4">Dotfiles Management</h1>
-<p class="mb-0 text-muted">Many nights of potential productive work programmers have lost by procrastinating on properly managing their dotfiles. This article discusses an elegant way to manage and share dotfiles across machines using a single git repository.
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="typo-xl mb-4">Dotfiles Management</h1>
+                <p class="mb-0 text-muted">Many nights of potential productive work programmers have lost by procrastinating on properly managing their dotfiles. This article discusses an elegant way to manage and share dotfiles across machines using a single git repository.
 </p>
-<div class="space--sm text-center"></div>
-<article class=content>
-<p><img src=images/banner.jpg alt=banner></p>
+
+                <div class="space--sm text-center"></div>
+
+                <article class="content">
+                    <p><img src="images/banner.jpg" alt="banner"></p>
 <p>Customizing an operating system has always fascinated programmers. There are tons of great articles out there with great customization tips. Most of these articles use dotfiles for customization, and these simple invisible files may seem pointless for a novice. But, they become a swiss army knife if properly configured.</p>
 <p>Personalizing a system takes a lot of time and hard work, and nobody wishes to do it over and over again. Setting up a machine with a preferred setting should be done in minimal steps and without writing any code. I&rsquo;ve divided this process into two parts: sharing dotfiles and writing an automated script.</p>
 <p>This article will discuss an elegant way to manage, modify, and share dotfiles across multiple devices using a single <code>git</code> repository.</p>
-<h1 id=managing-and-tracking-dotfiles>Managing and tracking [dot]files</h1>
-<p>The majority of developers use <code>git</code> to manage and share these files and use <code>symlinks</code> to sync them. Well, <code>symlinks</code> works, but it isn&rsquo;t the best way to sync your local files to the git repository. There are a good number of issues on <a href=https://stackoverflow.com/questions/46534290/symlink-dotfiles/64548852#64548852>StackOverflow</a>, pointing issues with dotfiles and symlinks. There is a much better solution to this, written by people at Atlassian &ndash; <a href=https://www.atlassian.com/git/tutorials/dotfiles>The best way to store your dotfiles: A bare Git repository </a>.</p>
-<p>The trick to managing these dotfiles is by creating a <a href=https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init>bare</a> git repository. If you start from scratch, make a <code>bare</code> repository in the <code>$HOME</code> directory.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># notice the --bare flag; this initializes the repository as a git bare</span>
+<h1 id="managing-and-tracking-dotfiles">Managing and tracking [dot]files</h1>
+<p>The majority of developers use <code>git</code> to manage and share these files and use <code>symlinks</code> to sync them. Well, <code>symlinks</code> works, but it isn&rsquo;t the best way to sync your local files to the git repository. There are a good number of issues on <a href="https://stackoverflow.com/questions/46534290/symlink-dotfiles/64548852#64548852">StackOverflow</a>, pointing issues with dotfiles and symlinks. There is a much better solution to this, written by people at Atlassian &ndash; <a href="https://www.atlassian.com/git/tutorials/dotfiles">The best way to store your dotfiles: A bare Git repository </a>.</p>
+<p>The trick to managing these dotfiles is by creating a <a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init">bare</a> git repository. If you start from scratch, make a <code>bare</code> repository in the <code>$HOME</code> directory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># notice the --bare flag; this initializes the repository as a git bare</span>
 git init --bare $HOME/.dotfiles
 </code></pre></div><p>Bare repositories are special in a way that they omit the working directory. Therefore, we need to define a work tree and git directory for the repository. The <code>--work-tree</code> is set to $HOME directory (since dotfiles live there) and <code>--git-dir</code> to <code>$HOME/.dotfiles</code>(this is our repository location). Our command to use the repository has the prefix<code>git --work-dir $HOME --git-dir $HOME/.dotfiles</code></p>
 <p>To make it easier to use, we alias this to <code>dotfiles</code>, which we will use to interact with our dotfiles repository.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>alias dotfiles<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/usr/bin/git --git-dir=</span>$HOME<span style=color:#e6db74>/.dotfiles --work-tree=</span>$HOME<span style=color:#e6db74>&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias dotfiles<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/usr/bin/git --git-dir=</span>$HOME<span style="color:#e6db74">/.dotfiles --work-tree=</span>$HOME<span style="color:#e6db74">&#34;</span>
 </code></pre></div><p><strong>Thats it!</strong> We are good to track our dotfiles using the dotfiles command. Some of the examples are:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># to check the version history</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># to check the version history</span>
 dotfiles log
 
-<span style=color:#75715e># to check the status of the tracked and untracked files</span>
+<span style="color:#75715e"># to check the status of the tracked and untracked files</span>
 dotfiles status
 
-<span style=color:#75715e># to add a file for tracking</span>
-dotfiles commit .vimrc -m <span style=color:#e6db74>&#34;.vimrc added&#34;</span>
+<span style="color:#75715e"># to add a file for tracking</span>
+dotfiles commit .vimrc -m <span style="color:#e6db74">&#34;.vimrc added&#34;</span>
 
-<span style=color:#75715e># push new files or changes to the github</span>
+<span style="color:#75715e"># push new files or changes to the github</span>
 dotfiles push origin main
 </code></pre></div><p>If we look at the output of <code>dotfiles status</code>, We can see all files under <code>$HOME</code> directory are coming under untracked files (see the left side of screenshot below). We clearly don&rsquo;t want this behavior, and to fix this behavior, we modify the dotfiles repository status configs like below:</p>
-<pre tabindex=0><code># hides all the untracked files when status command is called
+<pre tabindex="0"><code># hides all the untracked files when status command is called
 dotfiles config status.showUntrackedFiles no
-</code></pre>
-<h1 id=advantages-and-use-cases>Advantages and Use Cases</h1>
+</code></pre><!-- raw HTML omitted -->
+<h1 id="advantages-and-use-cases">Advantages and Use Cases</h1>
 <p>Besides easier management and sharing, this method has various other advantages like:</p>
-<h3 id=easy-setup>Easy setup</h3>
+<h3 id="easy-setup">Easy setup</h3>
 <p>Setting up a new machine can be a time-consuming task, But with this method, we can use our personalized configs in under a minute.
 We just need to clone the repository and source the <code>.bashrc</code> or <code>.zshrc</code> file.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git clone --bare https://github.com/&lt;username&gt;/dotfiles.git $HOME/.dotfiles <span style=color:#f92672>&amp;&amp;</span> source ~/.zshrc
-</code></pre></div><h3 id=versioned-dotfiles>Versioned dotfiles</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone --bare https://github.com/&lt;username&gt;/dotfiles.git $HOME/.dotfiles <span style="color:#f92672">&amp;&amp;</span> source ~/.zshrc
+</code></pre></div><h3 id="versioned-dotfiles">Versioned dotfiles</h3>
 <p>Best for experimenting with new configurations and keep the change history (Basically all the pros of using git)</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># to check the version history</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># to check the version history</span>
 dotfiles log
-</code></pre></div><h3 id=share-on-multiple-devices>Share on Multiple devices</h3>
+</code></pre></div><h3 id="share-on-multiple-devices">Share on Multiple devices</h3>
 <p>Share the same configs of multiple devices with minimal changes using <strong>git branches</strong>. Create a branch for your new machine, example:-</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># Create configurations specific to your aws machines</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Create configurations specific to your aws machines</span>
 dotfiles checkout -b aws
-</code></pre></div><h3 id=profiles-for-dotfiles>Profiles for dotfiles</h3>
+</code></pre></div><h3 id="profiles-for-dotfiles">Profiles for dotfiles</h3>
 <p>Create configs based on your environment using <code>branch</code>, create a branch and configure according to you work env.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># Manage multiple profiles - check out to the work profile</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Manage multiple profiles - check out to the work profile</span>
 dotfiles checkout work
-</code></pre></div><h1 id=heading></h1>
-<p>We completed the first part of our tooling setup, next read - <a href=/posts/automated-setup/>Automate the setup of your development machine</a>.</p>
-</article>
-</div>
-</div>
-</div>
+</code></pre></div><h1 id="heading"></h1>
+<p>We completed the first part of our tooling setup, next read - <a href="/posts/automated-setup/">Automate the setup of your development machine</a>.</p>
+
+                </article>
+            </div>
+        </div>
+    </div>
 </section>
-</div>
-<section class="section footer">
-<div class=container>
-<div class=row>
-<div class="col-md-4 space--md border-end">
-<h4>Kalkayan Engineering</h4>
-<div class=social>
-<a class=text-muted href=https://bit.ly/to-gh target=__blank>
-<span class=me-2>github</span>
-·
-</a>
-<a class=text-muted href=https://bit.ly/to-lnkd target=__blank>
-<span class=mx-2>linkedin</span>
-·
-</a>
-<a class=text-muted href=https://stackoverflow.com/users/14526555/manish-sahani target=__blank>
-<span class=mx-2>stackoverflow</span>
-</a>
-</div>
-</div>
-<div class=col-md-7></div>
-</div>
-</div>
+
+
+        </div>
+
+        <section class="section footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 space--md border-end">
+                <h4>Engineering w/Kalkayan</h4>
+                <div class="social">
+                    
+                        <a class="text-muted" href="https://github.com/kalkayan/" target="__blank">
+                            <span class=" me-2 ">github</span> 
+                             · 
+                        </a>
+                    
+                        <a class="text-muted" href="https://github.com/kalkayan/" target="__blank">
+                            <span class=" mx-2 ">linkedin</span> 
+                             · 
+                        </a>
+                    
+                        <a class="text-muted" href="https://github.com/kalkayan/" target="__blank">
+                            <span class=" mx-2 ">twitter</span> 
+                             · 
+                        </a>
+                    
+                        <a class="text-muted" href="https://github.com/kalkayan/" target="__blank">
+                            <span class=" mx-2 ">slack</span> 
+                            
+                        </a>
+                    
+                </div>
+            </div>
+            <div class="col-md-7"></div>
+        </div>
+    </div>
+    
 </section>
 </body>
 </html>
