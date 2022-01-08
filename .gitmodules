@@ -1,3 +1,3 @@
 [submodule "themes/seydoux"]
 	path = themes/seydoux
-	url = git@github.com:kalkayan/seydoux.git
+	url = https://github.com/kalkayan/seydoux.git
