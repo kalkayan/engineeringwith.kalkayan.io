@@ -1,0 +1,36 @@
+baseURL = 'https://engineering.kalkayan.io'
+languageCode = 'en-us'
+title = 'Engineering w/Kalkayan'
+theme = "seydoux"
+publishDir = 'docs'
+paginate = 3
+
+[Author]
+    name = 'Manish'
+    github = 'kalkayan'
+
+[params]
+    title = "Build for learning"
+    # subtitle = "This site may feel like a blog but its not."
+    mainSections = []
+
+[[params.social]]
+    name = 'github'
+    url = 'https://github.com/kalkayan/'
+
+[[params.social]]
+    name = 'linkedin'
+    url = 'https://github.com/kalkayan/'
+
+[[params.social]]
+    name = 'twitter'
+    url = 'https://github.com/kalkayan/'
+
+[[params.social]]
+    name = 'slack'
+    url = 'https://github.com/kalkayan/'
+
+[module]
+[[module.mounts]]
+source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+target = "assets/js/bootstrap.bundle.min.js"
