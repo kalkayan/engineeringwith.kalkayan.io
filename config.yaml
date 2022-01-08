@@ -1,7 +1,7 @@
 baseURL: "https://engineering.kalkayan.io"
 title: Kalkayan Engineering
 paginate: 5
-theme: tale
+theme: seydoux
 publishDir: docs
 
 enableRobotsTXT: true
@@ -88,8 +88,8 @@ params:
       url: "https://bit.ly/to-lnkd"
     - name: stackoverflow
       url: "https://stackoverflow.com/users/14526555/manish-sahani"
-    - name: email
-      url: "mailto:rec.manish.sahani@gmail.com"
+    # - name: email
+    #   url: "mailto:rec.manish.sahani@gmail.com"
 
   analytics:
     google:
