@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-us">
+     
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    
+    <title>
+        Automated Installation | Engineering w/Kalkayan
+    </title>
+
+    
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Many nights of potential productive work programmers have lost by procrastinating on properly setting up a new machine&#39;s development environment. This is the first article of the series which discusses some elegant ways to set up your new device with one single command.
+">
+
+    <meta name="generator" content="Hugo 0.89.4" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/styles.min.css" media="screen">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+
+</head>
+<body class="seyx">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-4 border-bottom">
+  <div class="container">
+    <a class="navbar-brand typo-gradient" href="/">Engineering w/Kalkayan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-md-4 me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Interviews</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item me-4">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item my-auto">
+            
+            <a href="align-middle">
+                <svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path fill="" d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+            </a>
+            
+            <a href="align-middle">
+                <svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+            </a>
+            
+            <a href="align-middle">
+                <svg viewBox="0 0 256 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+    <g>
+        <path d="M256,25.4500259 C246.580841,29.6272672 236.458451,32.4504868 225.834156,33.7202333 C236.678503,27.2198053 245.00583,16.9269929 248.927437,4.66307685 C238.779765,10.6812633 227.539325,15.0523376 215.57599,17.408298 C205.994835,7.2006971 192.34506,0.822 177.239197,0.822 C148.232605,0.822 124.716076,24.3375931 124.716076,53.3423116 C124.716076,57.4586875 125.181462,61.4673784 126.076652,65.3112644 C82.4258385,63.1210453 43.7257252,42.211429 17.821398,10.4359288 C13.3005011,18.1929938 10.710443,27.2151234 10.710443,36.8402889 C10.710443,55.061526 19.9835254,71.1374907 34.0762135,80.5557137 C25.4660961,80.2832239 17.3681846,77.9207088 10.2862577,73.9869292 C10.2825122,74.2060448 10.2825122,74.4260967 10.2825122,74.647085 C10.2825122,100.094453 28.3867003,121.322443 52.413563,126.14673 C48.0059695,127.347184 43.3661509,127.988612 38.5755734,127.988612 C35.1914554,127.988612 31.9009766,127.659938 28.694773,127.046602 C35.3777973,147.913145 54.7742053,163.097665 77.7569918,163.52185 C59.7820257,177.607983 37.1354036,186.004604 12.5289147,186.004604 C8.28987161,186.004604 4.10888474,185.75646 0,185.271409 C23.2431033,200.173139 50.8507261,208.867532 80.5109185,208.867532 C177.116529,208.867532 229.943977,128.836982 229.943977,59.4326002 C229.943977,57.1552968 229.893412,54.8901664 229.792282,52.6381454 C240.053257,45.2331635 248.958338,35.9825545 256,25.4500259" ></path>
+    </g>
+</svg>
+            </a>
+            
+            <a href="align-middle">
+                <svg style="enable-background:new 65 65 150 135;" version="1.1" viewBox="65 65 150 135"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<g>
+	<g>
+		<path class="st0" d="M99.4,151.2c0,7.1-5.8,12.9-12.9,12.9s-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h12.9V151.2z"/>
+		<path class="st0" d="M105.9,151.2c0-7.1,5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v32.3c0,7.1-5.8,12.9-12.9,12.9
+			s-12.9-5.8-12.9-12.9C105.9,183.5,105.9,151.2,105.9,151.2z"/>
+	</g>
+	<g>
+		<path class="st0" d="M118.8,99.4c-7.1,0-12.9-5.8-12.9-12.9s5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v12.9H118.8z"/>
+		<path class="st0" d="M118.8,105.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9H86.5c-7.1,0-12.9-5.8-12.9-12.9
+			s5.8-12.9,12.9-12.9C86.5,105.9,118.8,105.9,118.8,105.9z"/>
+	</g>
+	<g>
+		<path class="st0" d="M170.6,118.8c0-7.1,5.8-12.9,12.9-12.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9h-12.9V118.8z"/>
+		<path class="st0" d="M164.1,118.8c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9V86.5c0-7.1,5.8-12.9,12.9-12.9
+			c7.1,0,12.9,5.8,12.9,12.9V118.8z"/>
+	</g>
+	<g>
+		<path class="st0" d="M151.2,170.6c7.1,0,12.9,5.8,12.9,12.9c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9v-12.9H151.2z"/>
+		<path class="st0" d="M151.2,164.1c-7.1,0-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h32.3c7.1,0,12.9,5.8,12.9,12.9
+			c0,7.1-5.8,12.9-12.9,12.9H151.2z"/>
+	</g>
+</g>
+</svg>
+
+            </a>
+            
+        </li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="content">
+
+<section class="section section-single border-bottom home bg-white">
+    
+
+        <div class="border-bottom">
+            <div class="container">
+                <div class="row border-start text-muted border-end justify-content-center">
+                    <div class="col-md-6 border-start space--sm px-5">
+                        <span>
+                            
+                            
+                                
+                            
+                                
+                                    
+                                    
+                                    <a href="/posts" class="text-muted">
+                                        <small>Posts</small> 
+                                    </a>
+                                
+                            
+                                
+                                    <small>/</small> 
+                                    
+                                    <a href="/posts/setting-up-a-development-machine-part-1" class="text-muted">
+                                        <small>Setting up a development machine part 1</small> 
+                                    </a>
+                                
+                            
+                                
+                            
+                        </span>
+
+                    </div>
+                    <div class="col-md-3 space--sm text-center border-start border-end px-5">
+                        <small><span>Writted by Manish Sahani</span></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-bottom">
+            <div class="container">
+                <div class="row border-start border-end justify-content-center">
+                    <div class="col-md-10 space--lg px-5">
+                        <h1 class="typo-xl mb-4">Automated Installation</h1>
+                        <p class="mb-0 text-muted">Many nights of potential productive work programmers have lost by procrastinating on properly setting up a new machine&#39;s development environment. This is the first article of the series which discusses some elegant ways to set up your new device with one single command.
+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-bottom">
+            <div class="container">
+                <div class="row border-start border-end justify-content-center">
+                    <div class="col-md-10 space--lg px-5">
+                        <article class="content">
+                            <p>Setting up a new development machine is a long and painful process; nobody ever remembers what they have installed in their previous device. This guide is here to help you automate everything in your development setup and lets you enjoy the exciting feeling of getting a new machine.</p>
+<p>The guide has three parts: first is automating the installation of binaries and applications, then configuring code applications (vim, tmux, etc.) and customizing the operating system with dotfiles, and finally how to store and share them. I&rsquo;ll set up a MacBook Pro in all the articles, but you can always expand it to other surfaces like Linux.</p>
+<!-- raw HTML omitted -->
+<h1 id="getting-started">Getting Started</h1>
+<p>When you have a new MacBook, what is the first thing you do? (After posting its picture on LinkedIn): Download necessary apps like Spotify, Slack, VS Code, etc., right?. Visiting tens of websites and downloading dmgs was such a long, painful and tedious process until brew casks came into the picture. This feature of Homebrew gives us an excellent starting point for automating the setup process.</p>
+<p>We can have a small bash script and call Homebrew from there. Building on this idea, in this series, we&rsquo;ll write a script such that it can set up your brand new machine with just one command of the following structure.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -fsSL https://example.com/setup.sh | bash
+</code></pre></div><p>Let&rsquo;s create this <code>setup</code> script in the $HOME directory, which will automate our future set-up process.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">touch $HOME/setup
+</code></pre></div><h1 id="neccessay-tools-and-a-package-manager">Neccessay tools and a Package Manager</h1>
+<p>We need to install XCode command-line tools, which install all the common and necessary things like macOS SDK, headers, build tools, compilers, interpreters, etc. Add the following in the previously created script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/bin/env bash
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># Install xcode command line tool if not already installed</span>
+<span style="color:#66d9ef">if</span> ! xcode-select -p 1&gt;/dev/null; <span style="color:#66d9ef">then</span>
+    xcode-select --install
+<span style="color:#66d9ef">fi</span>
+</code></pre></div><p>First, the above lines check for xcode-select&rsquo;s path (<code>-p</code> is for printing the path of the active developer directory), and if not present, it installs using the <code>--install</code> flag.</p>
+<p>Then we install a system package manager &ndash; Homebrew, using the similar if-then structure.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/bin/env bash
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># Install xcode command line tool if ....</span>
+
+<span style="color:#75715e"># Install brew.sh (system package manager) if already not installed</span>
+<span style="color:#66d9ef">if</span> ! brew -h 1&gt;/dev/null; <span style="color:#66d9ef">then</span>
+    echo /bin/bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">fi</span>
+
+<span style="color:#75715e"># Update brew to latest available version</span>
+brew update
+</code></pre></div><p>After installing brew, we run <code>brew update</code> to ensure we have the latest version installed.</p>
+<h1 id="installing-applications-and-libraries">Installing Applications and libraries</h1>
+<p>In this section, We deal with installing applications and libraries, and I&rsquo;ll show you one of the coolest ways to manage and automate this process with just a few bash lines.</p>
+<p>It is hard to remember what applications and libraries we had previously installed. Homebrew has <code>homebrew-bundle</code> to take care of this by dumping all the installed taps, bins, and casks in a <code>Brewfile</code> which can install all these in the future. The problem here is that <code>Brewfile</code> doesn&rsquo;t store versions of the bins or casks. It installs the latest version of the binaries, which can sometimes cause you trouble. For example, if you have PHP installed &ndash; or in general software that doesn&rsquo;t have backward compatibility.</p>
+<p>To solve this problem of versioning, let us start from the most straightforward thing and create a list of binaries and casks that we need (name it <code>bins.txt</code> and <code>casks.txt</code>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">touch $HOME/.config/kalkayan/bins.txt $HOME/.config/kalkayan/casks.txt
+</code></pre></div><p>We list down all the brew formulas for binaries and casks with their versions that we want to have in our system in their specific file. for example &ndash;</p>
+<pre tabindex="0"><code>hades in ~ $ cat $HOME/.config/kalkayan/bins.txt
+coreutils
+llvm
+go
+php@7.4
+nvm
+...
+</code></pre><p>To automate these bins and casks' installation, we need to import these lists in our <code>setup</code> script. <code>mapfile</code> creates an array from the file, and now we have our list store in collections named <code>bins</code> and <code>casks</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/bin/env bash
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># Install xcode command line tool if....</span>
+
+<span style="color:#75715e"># Install brew.sh (system package manager)....</span>
+
+<span style="color:#75715e"># List of binaries that needs be installed</span>
+mapfile -t bins &lt;  &lt;<span style="color:#f92672">(</span>cat $HOME/.config/kalkayan/bins.txt<span style="color:#f92672">)</span>
+
+<span style="color:#75715e"># List of casks that needs be installed</span>
+mapfile -t casks &lt; &lt;<span style="color:#f92672">(</span>cat $HOME/.config/kalkayan/casks.txt<span style="color:#f92672">)</span>
+</code></pre></div><p>Now we iterate over these arrays and check for the library if already installed. If not, we install it using brew. In the following code, first, we split the name at <code>@</code> and take the first (example &ndash; <code>php</code> in <code>php@7.4</code> )</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># List of casks ....</span>
+
+<span style="color:#75715e"># Install binaries using Homebrew, iterate over bins array and install.</span>
+<span style="color:#66d9ef">for</span> binary in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>bins[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
+    <span style="color:#75715e"># split the brew formula into binary name and version of installation and</span>
+    <span style="color:#75715e"># get the name of the binary (ex- php in php@7.4)</span>
+    b<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo $binary | cut -d <span style="color:#ae81ff">\@</span> -f 1<span style="color:#e6db74">`</span>
+    <span style="color:#75715e"># check if the binary is already present, otherwise install</span>
+    <span style="color:#66d9ef">if</span> ! brew list --formula | grep <span style="color:#e6db74">&#34;</span>$b<span style="color:#e6db74">&#34;</span> 1&gt;/dev/null; <span style="color:#66d9ef">then</span>
+        brew install <span style="color:#e6db74">&#34;</span>$binary<span style="color:#e6db74">&#34;</span>
+    <span style="color:#66d9ef">fi</span>
+<span style="color:#66d9ef">done</span>
+</code></pre></div><p>Similarly, we write a loop for casks but without worrying about the versions (can be extended if required)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Install binaries using Homebrew, ....</span>
+
+<span style="color:#75715e"># Install casks using Homebrew, iterate over casks array and install.</span>
+<span style="color:#66d9ef">for</span> c in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>casks[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
+    <span style="color:#75715e"># first, check if the cask is present or not, if not install</span>
+    <span style="color:#66d9ef">if</span> ! brew list --cask | grep <span style="color:#e6db74">&#34;</span>$c<span style="color:#e6db74">&#34;</span> 1&gt;/dev/null; <span style="color:#66d9ef">then</span>
+        brew casks install <span style="color:#e6db74">&#34;</span>$c<span style="color:#e6db74">&#34;</span>
+    <span style="color:#66d9ef">fi</span>
+<span style="color:#66d9ef">done</span>
+</code></pre></div><p>In the second part of this series, we&rsquo;ll create a bash function to update our bins.txt and casks.txt when a bin/cask is installed or removed.</p>
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        
+
+            <div class="">
+                <div class="container">
+                    <div class="row flex-row-reverse-sm border-start border-end">
+                        <div class="p-0 col-md-8 border-end">
+                            
+                                
+                                <div class=" space--sm px-5">
+                                        <h3 class="typo-sm">
+                                            <a href="https://engineering.kalkayan.io/posts/setting-up-a-development-machine-part-3/">Dotfiles Management</a>
+                                        </h3>
+                                        <p class="mb-0 text-muted"><small>Many nights of potential productive work programmers have lost by procrastinating on properly managing their dotfiles. This article discusses an elegant way to manage and share dotfiles across machines using a single git repository.
+</small></p>
+                                    </div>
+                                
+                            
+                        </div>
+                        <div class="col-md-4 space--sm px-5 d-flex align-items-center">
+                            <h3 class="typo-lg my-auto w-100 text-center">#Related</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    
+</section>
+
+
+        </div>
+
+        <section class="section footer">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-4 p-0 text-center border-start border-end">
+                <div class="space--sm px-5">
+                    <h4>Engineering w/Kalkayan</h4>
+                </div>
+                <div class="row social border-top border-bottom">
+                    
+                    <div class="col space border-end ">
+                            <a class="text-muted" href="https://github.com/kalkayan/" target="__blank">
+                                <span class="">github</span> 
+                            </a>
+                        </div>
+                    
+                    <div class="col space border-end ">
+                            <a class="text-muted" href="https://github.com/kalkayan/" target="__blank">
+                                <span class="">linkedin</span> 
+                            </a>
+                        </div>
+                    
+                    <div class="col space border-end ">
+                            <a class="text-muted" href="https://github.com/kalkayan/" target="__blank">
+                                <span class="">twitter</span> 
+                            </a>
+                        </div>
+                    
+                    <div class="col space ">
+                            <a class="text-muted" href="https://github.com/kalkayan/" target="__blank">
+                                <span class="">slack</span> 
+                            </a>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-8 pe-5 border-end">
+                <table class="h-100 w-100 text-center"> 
+                    <tbody>
+                        <tr>
+                            <td class="text-muted align-middle"><small>Created & Designed Manish and Powered by @hugo</small></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

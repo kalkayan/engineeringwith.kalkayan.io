@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://engineering.kalkayan.io/posts/setting-up-a-development-machine-part-1/</loc>
+  </url><url>
+    <loc>https://engineering.kalkayan.io/categories/</loc>
+  </url><url>
+    <loc>https://engineering.kalkayan.io/posts/setting-up-a-development-machine-part-3/</loc>
+  </url><url>
+    <loc>https://engineering.kalkayan.io/</loc>
+  </url><url>
+    <loc>https://engineering.kalkayan.io/tags/git/</loc>
+  </url><url>
+    <loc>https://engineering.kalkayan.io/tags/git-bare/</loc>
+  </url><url>
+    <loc>https://engineering.kalkayan.io/posts/</loc>
+  </url><url>
+    <loc>https://engineering.kalkayan.io/tags/</loc>
+  </url><url>
+    <loc>https://engineering.kalkayan.io/categories/tooling/</loc>
+  </url><url>
+    <loc>https://engineering.kalkayan.io/tags/tooling/</loc>
+  </url>
+</urlset>
