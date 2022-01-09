@@ -30,7 +30,7 @@ rm -rf .git/worktrees/docs/
 
 echo "Generating site"
 hugo
-echo "engineering.kalkayan.io"> docs/CNAME
+echo "engineeringwith.kalkayan.io"> docs/CNAME
 
 echo "Updating gh-pages branch"
 git add docs && git commit -m "Publishing to github (deploy.sh)"
