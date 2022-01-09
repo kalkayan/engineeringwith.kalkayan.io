@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Engineering w/Kalkayan</title>
-    <link>https://engineering.kalkayan.io/</link>
+    <link>https://engineeringwith.kalkayan.io/</link>
     <description>Recent content on Engineering w/Kalkayan</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://engineering.kalkayan.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://engineeringwith.kalkayan.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automated Installation</title>
-      <link>https://engineering.kalkayan.io/posts/setting-up-a-development-machine-part-1/</link>
+      <link>https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://engineering.kalkayan.io/posts/setting-up-a-development-machine-part-1/</guid>
+      <guid>https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-1/</guid>
       <description>Setting up a new development machine is a long and painful process; nobody ever remembers what they have installed in their previous device. This guide is here to help you automate everything in your development setup and lets you enjoy the exciting feeling of getting a new machine.
 The guide has three parts: first is automating the installation of binaries and applications, then configuring code applications (vim, tmux, etc.) and customizing the operating system with dotfiles, and finally how to store and share them.</description>
     </item>
     
     <item>
       <title>Dotfiles Management</title>
-      <link>https://engineering.kalkayan.io/posts/setting-up-a-development-machine-part-3/</link>
+      <link>https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://engineering.kalkayan.io/posts/setting-up-a-development-machine-part-3/</guid>
+      <guid>https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-3/</guid>
       <description>Customizing an operating system has always fascinated programmers. There are tons of great articles out there with great customization tips. Most of these articles use dotfiles for customization, and these simple invisible files may seem pointless for a novice. But, they become a swiss army knife if properly configured.
 Personalizing a system takes a lot of time and hard work, and nobody wishes to do it over and over again. Setting up a machine with a preferred setting should be done in minimal steps and without writing any code.</description>
     </item>
