@@ -29,7 +29,7 @@ git worktree prune
 rm -rf .git/worktrees/docs/
 
 echo "Generating site"
-hugo
+hugo "$1"
 echo "engineeringwith.kalkayan.io"> docs/CNAME
 
 echo "Updating gh-pages branch"
