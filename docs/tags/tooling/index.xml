@@ -26,14 +26,5 @@ The guide has three parts: first is automating the installation of binaries and 
 Personalizing a system takes a lot of time and hard work, and nobody wishes to do it over and over again. Setting up a machine with a preferred setting should be done in minimal steps and without writing any code.</description>
     </item>
     
-    <item>
-      <title>Setting up a Development Machine [Part 2]: Vim &#43; Bash Configurations</title>
-      <link>https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-2/</guid>
-      <description>Customizing an operating system has always fascinated programmers. There are tons of great articles out there with great customization tips. Most of these articles use dotfiles for customization, and these simple invisible files may seem pointless for a novice. But, they become a swiss army knife if properly configured.</description>
-    </item>
-    
   </channel>
 </rss>

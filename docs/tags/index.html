@@ -32,7 +32,7 @@
 
 </head>
 <body class="seyx">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white p-4 border-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top  bg-white p-0 border-bottom">
   <div class="container">
     <a class="navbar-brand typo-gradient" href="/">Engineering w/Kalkayan</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,31 +42,22 @@
       <ul class="navbar-nav ms-md-4 me-auto">
         
             
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Posts
-                    </a>
-                    <ul class="dropdown-menu p-0 border" aria-labelledby="navbarDropdown">
-                        
-                        <li><a class="dropdown-item px-3 border-bottom nav-link" href="https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-1/">Automated Installation</a></li>
-                        
-                        <li><a class="dropdown-item px-3 border-bottom nav-link" href="https://engineeringwith.kalkayan.io/posts/designing-elekto/">Designing the Elekto Project under CNCF Internship</a></li>
-                        
-                        <li><a class="dropdown-item px-3 border-bottom nav-link" href="https://engineeringwith.kalkayan.io/posts/designing-dtutimes/">Designing the Official Newsletter of Delhi Technological University</a></li>
-                        
-                        <li><a class="dropdown-item px-3 border-bottom nav-link" href="https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-3/">Dotfiles Management</a></li>
-                        
-                        <li><a class="dropdown-item px-3 border-bottom nav-link" href="https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-2/">Setting up a Development Machine [Part 2]: Vim &#43; Bash Configurations</a></li>
-                        
-                    </ul>
+                <li class="nav-item border-start  space px-4 text-center">
+                    <a class="nav-link" href="https://engineeringwith.kalkayan.io/posts/">Articles</a>
+                </li>
+            
+        
+            
+                <li class="nav-item border-start  border-end  space px-4 text-center">
+                    <a class="nav-link" href="https://engineeringwith.kalkayan.io/series/">Series</a>
                 </li>
             
         
       </ul>
 
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item me-4">
-          <a class="nav-link" href="#">About Me</a>
+        <li class="nav-item me-4 space px-3 border-start border-end">
+          <a class="nav-link" href="/about">About Me</a>
         </li>
         <li class="nav-item my-auto">
             
@@ -127,8 +118,7 @@
 </nav>
 <div id="content">
 
-<section class="section section-list border-bottom">
-
+<section class="section section-list">
     <div class="border-bottom">
         <div class="container">
             <div class="row border-start text-muted border-end justify-content-center">
@@ -137,64 +127,71 @@
                 </div>
                 <div class="col-md-9 border-start space--sm px-5">
                     <span>
-                        
-                        
-                            
-                        
-                            
-                                
-                                
-                                <a href="/tags" class="text-muted">
-                                    <small>Tags</small> 
-                                </a>
-                            
-                        
-                            
-                        
-                    </span>
+    
+    
+        
+    
+        
+            
+            
+            <a href="/tags" class="text-muted">
+                <small>Tags</small> 
+            </a>
+        
+    
+        
+    
+</span>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="border-bottom">
+    <div class="container">
+        <div class="row border-start border-end justify-content-center">
+            <div class="col-md-10 space--lg px-5">
+                <h1 class="typo-xl mb-4">Tags</h1>
+                <p class="mb-0 text-muted"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    
+    <div class="">
         <div class="container">
-            <div class="row border-start border-end justify-content-center">
-                <div class="col-md-10 space--lg px-5">
-                    <h1 class="typo-xl mb-4">Tags</h1>
-                    <p class="mb-0 text-muted"></p>
+            <div class="row flex-row-reverse-sm border-start border-end">
+                <div class="p-0 col-md-8 border-end">
+     
+            
+    
+</div>
+                <div class="col-md-4 space--sm px-5 d-flex align-items-center">
+                    <h3 class="typo-lg my-auto w-100 text-center"># Recent in Tags</h3>
                 </div>
             </div>
         </div>
     </div>
-
-        <div class="">
-            <div class="container">
-                <div class="row flex-row-reverse-sm border-start border-end">
-                    <div class="p-0 col-md-8 border-end">
-                        
-                    </div>
-                    <div class="col-md-4 space--sm px-5 d-flex align-items-center">
-                        <h3 class="typo-lg my-auto w-100 text-center">#Articles in Tags</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 </section>
 
 
         </div>
 
-        <section class="section footer">
+        <section class="section footer border-top border-bottom">
     <div class="container">
         <div class="row">
             
-            <div class="col-md-5 p-0 text-center border-start border-end">
+            <div class="col-md-4 p-0 border-start border-end">
                 <div class="space--sm px-5">
-                    <h6 class="typo-gradient mb-0">Engineering w/Kalkayan</h6>
+                    <h6 class="typo-gradient mb-2">Engineering w/Kalkayan</h6>
+                    <p class="mb-0 text-muted typo-xxs">
+                        Copyright (c) 2022 Manish Sahani
+                    </p>
                 </div>
-                <div class="row social border-top border-bottom">
+                <div class="row social border-top border-bottom text-center">
                     
                     <div class="col space border-end ">
                             <a class="text-muted" href="https://github.com/kalkayan/" target="__blank">
@@ -222,14 +219,29 @@
                     
                 </div>
             </div>
-            <div class="col-md-7 pe-5 border-end">
+            <div class="col pe-5 border-end">
                 <table class="h-100 w-100 text-center"> 
                     <tbody>
                         <tr>
-                            <td class="text-muted align-middle"><small>Created & Designed Manish Sahani and Powered by @hugo</small></td>
+                            <td class="text-muted align-middle">
+                                <small>Created & Designed Manish Sahani and build using @hugo.</small>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="row border-end border-start"> 
+            <div class="col px-5 space text-muted text-center">
+                <small class="typo-xxs">
+                    This site (Engineering w/Kalkayan) is maintained by Manish Sahani and was created with the following rules. First, being never to monitize the site's content 
+                    and with paid promotion/ads. Second, to not collect data of any kind what so ever. 
+                </small>
             </div>
         </div>
     </div>

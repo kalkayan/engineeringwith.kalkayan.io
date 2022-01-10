@@ -2,37 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://engineeringwith.kalkayan.io/posts/</loc>
+  </url><url>
     <loc>https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-1/</loc>
   </url><url>
     <loc>https://engineeringwith.kalkayan.io/categories/</loc>
-  </url><url>
-    <loc>https://engineeringwith.kalkayan.io/posts/designing-elekto/</loc>
-  </url><url>
-    <loc>https://engineeringwith.kalkayan.io/posts/designing-dtutimes/</loc>
   </url><url>
     <loc>https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-3/</loc>
   </url><url>
     <loc>https://engineeringwith.kalkayan.io/</loc>
   </url><url>
-    <loc>https://engineeringwith.kalkayan.io/tags/flask/</loc>
-  </url><url>
     <loc>https://engineeringwith.kalkayan.io/tags/git/</loc>
   </url><url>
     <loc>https://engineeringwith.kalkayan.io/tags/git-bare/</loc>
   </url><url>
-    <loc>https://engineeringwith.kalkayan.io/tags/gitops/</loc>
-  </url><url>
-    <loc>https://engineeringwith.kalkayan.io/tags/php/</loc>
-  </url><url>
-    <loc>https://engineeringwith.kalkayan.io/posts/</loc>
-  </url><url>
-    <loc>https://engineeringwith.kalkayan.io/tags/react/</loc>
-  </url><url>
-    <loc>https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-2/</loc>
-  </url><url>
-    <loc>https://engineeringwith.kalkayan.io/tags/system-design/</loc>
-  </url><url>
-    <loc>https://engineeringwith.kalkayan.io/categories/system-designing/</loc>
+    <loc>https://engineeringwith.kalkayan.io/series/</loc>
   </url><url>
     <loc>https://engineeringwith.kalkayan.io/tags/</loc>
   </url><url>
