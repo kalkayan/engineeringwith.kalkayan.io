@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>test-2 on Engineering w/Kalkayan</title>
+    <link>https://engineeringwith.kalkayan.io/tags/test-2/</link>
+    <description>Recent content in test-2 on Engineering w/Kalkayan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://engineeringwith.kalkayan.io/tags/test-2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Designing the Elekto Project under CNCF Internship</title>
+      <link>https://engineeringwith.kalkayan.io/posts/designing-elekto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://engineeringwith.kalkayan.io/posts/designing-elekto/</guid>
+      <description>The Elekto Project develops Elekto - simple software for secure online elections. Elekto was created as part of an LFX internship for the Kubernetes project under the guidance of Josh Berkus, Marky Jackson, Sergey Kanzhelev, and is now a CNCF infrastructure project.
+Why Elekto? Kubernetes and several other projects use CIVS for running Steering Committee elections. The voting logic of CIVS works, but it has several severe shortcomings like:
+ It distributes all ballots by email, requiring tracking and handling of email addresses on a large scale.</description>
+    </item>
+    
+  </channel>
+</rss>
