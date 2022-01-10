@@ -4,13 +4,14 @@ title = 'Engineering w/Kalkayan'
 theme = "seydoux"
 publishDir = 'docs'
 paginate = 3
+pluralizelisttitles = false
 
 [Author]
-    name = 'Manish'
+    name = 'Manish Sahani'
     github = 'kalkayan'
 
 [params]
-    title = "Build for learning"
+    title = "Build for learning (WIP)"
     # subtitle = "This site may feel like a blog but its not."
     mainSections = []
 

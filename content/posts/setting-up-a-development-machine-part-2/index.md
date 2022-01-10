@@ -6,6 +6,7 @@ description: >
 # ShowToc: true
 draft: true
 tags: ["tooling", "git", "git-bare"]
+categories: "Tooling"
 ---
 
 Customizing an operating system has always fascinated programmers. There are tons of great articles out there with great customization tips. Most of these articles use dotfiles for customization, and these simple invisible files may seem pointless for a novice. But, they become a swiss army knife if properly configured. 

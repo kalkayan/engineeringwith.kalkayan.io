@@ -3,8 +3,8 @@ Author: Manish Sahani
 title: "Designing the Elekto Project under CNCF Internship"
 description: >
     Many nights of potential productive work programmers have lost by procrastinating on properly managing their dotfiles. This article discusses an elegant way to manage and share dotfiles across machines using a single git repository.
-tags: ["System design", "flask", "gitops"]
-categories: "System Designing"
+tags: ["System design", "flask", "gitops", "test-1", "test-2", "test-3", "test-4"]
+categories: ["System Designing", "Test", "test-2"]
 draft: true
 <!--cover: images/banner.png-->
 color: primary
@@ -12,7 +12,6 @@ color: primary
 
 The Elekto Project develops Elekto - simple software for secure online elections. Elekto was created as part of an LFX internship for the Kubernetes project under the guidance of [Josh Berkus](https://mentorship.lfx.linuxfoundation.org/mentor/681bd33c-52c8-450e-97d6-cf95d3493ac6), [Marky Jackson](https://mentorship.lfx.linuxfoundation.org/mentor/cbceda22-d448-4121-adc1-c4f793291bea), [Sergey Kanzhelev](https://mentorship.lfx.linuxfoundation.org/mentor/20ddefe1-872a-4077-ba0c-f85ebdfb7fd5), and is now a CNCF infrastructure project.
 
-<!--![banner.png]()-->
 
 # Why Elekto?
 
@@ -48,10 +47,7 @@ The Election officers starts the election, and now the voters can login with the
 
 While the election is running the election officers can view the election stats several times from UI, and closes the election after the voting deadline is over.
 
-| ![architecture.png](images/sequence-2.png) |
-| ------------------------------------------ | ------------------------------------------------- |
-| <!--                                       | ![architecture.png](/static/sequence-diagram.png) |
-| ------                                     | -->                                               |
+![architecture.png](images/sequence-2.png)
 
 ### After Election
 
@@ -59,5 +55,4 @@ After the election ends an EO can see full election results in the web interface
 
 An EO can also download a CSV or YAML file of private election results for archiving that Would include same information as the full election results.
 
-| ![architecture.png](images/sequence-3.png) |
-| ------------------------------------------ |
+![architecture.png](images/sequence-3.png)

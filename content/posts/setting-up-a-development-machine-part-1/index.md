@@ -137,3 +137,4 @@ done
 ```
 
 In the second part of this series, we'll create a bash function to update our bins.txt and casks.txt when a bin/cask is installed or removed.
+
