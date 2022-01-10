@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://engineeringwith.kalkayan.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>flask</title>
+      <link>https://engineeringwith.kalkayan.io/tags/flask/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://engineeringwith.kalkayan.io/tags/flask/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>git</title>
       <link>https://engineeringwith.kalkayan.io/tags/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -21,6 +30,42 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://engineeringwith.kalkayan.io/tags/git-bare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gitops</title>
+      <link>https://engineeringwith.kalkayan.io/tags/gitops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://engineeringwith.kalkayan.io/tags/gitops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PHP</title>
+      <link>https://engineeringwith.kalkayan.io/tags/php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://engineeringwith.kalkayan.io/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>https://engineeringwith.kalkayan.io/tags/react/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://engineeringwith.kalkayan.io/tags/react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>System design</title>
+      <link>https://engineeringwith.kalkayan.io/tags/system-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://engineeringwith.kalkayan.io/tags/system-design/</guid>
       <description></description>
     </item>
     
