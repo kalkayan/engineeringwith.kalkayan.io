@@ -2,7 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://engineeringwith.kalkayan.io/categories/</loc>
+    <lastmod>2022-01-23T10:46:33+05:30</lastmod>
+  </url><url>
     <loc>https://engineeringwith.kalkayan.io/</loc>
+    <lastmod>2022-01-23T10:46:33+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/categories/interview/</loc>
     <lastmod>2022-01-23T10:46:33+05:30</lastmod>
   </url><url>
     <loc>https://engineeringwith.kalkayan.io/series/interviewing/preparation/</loc>
@@ -26,23 +32,11 @@
     <loc>https://engineeringwith.kalkayan.io/tags/bloomberg/</loc>
     <lastmod>2022-01-23T07:17:25+05:30</lastmod>
   </url><url>
-    <loc>https://engineeringwith.kalkayan.io/categories/</loc>
-    <lastmod>2022-01-23T07:17:25+05:30</lastmod>
-  </url><url>
-    <loc>https://engineeringwith.kalkayan.io/categories/interview/</loc>
-    <lastmod>2022-01-23T07:17:25+05:30</lastmod>
-  </url><url>
     <loc>https://engineeringwith.kalkayan.io/series/interviewing/bloomberg/</loc>
     <lastmod>2022-01-23T07:17:25+05:30</lastmod>
   </url><url>
     <loc>https://engineeringwith.kalkayan.io/tags/</loc>
     <lastmod>2022-01-23T07:17:25+05:30</lastmod>
-  </url><url>
-    <loc>https://engineeringwith.kalkayan.io/series/interviewing/adobe/</loc>
-    <lastmod>2022-01-23T04:12:23+05:30</lastmod>
-  </url><url>
-    <loc>https://engineeringwith.kalkayan.io/categories/interviewing/</loc>
-    <lastmod>2022-01-23T04:10:54+05:30</lastmod>
   </url><url>
     <loc>https://engineeringwith.kalkayan.io/series/interviewing/</loc>
     <lastmod>2022-01-23T04:10:54+05:30</lastmod>

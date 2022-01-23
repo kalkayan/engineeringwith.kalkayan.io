@@ -8,12 +8,14 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Jan 2022 04:10:54 +0530</lastBuildDate><atom:link href="https://engineeringwith.kalkayan.io/series/interviewing/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Prepare your strategy [Tips minus the bullshit]</title>
+      <title>Interview `Strategy` minus the bullshit</title>
       <link>https://engineeringwith.kalkayan.io/series/interviewing/preparation/</link>
       <pubDate>Sun, 23 Jan 2022 10:46:33 +0530</pubDate>
       
       <guid>https://engineeringwith.kalkayan.io/series/interviewing/preparation/</guid>
-      <description>#Tip &amp;ndash;&amp;gt; After getting an interview, the first thing you should do is assess yourself. Ask yourself the following questions &amp;ndash; How familiar are you with algorithms? How much practice have you done? And most importantly, How well you can explain your thought process.
+      <description>Assess (Understanding) &amp;ndash;&amp;gt; Strategize (approaching) &amp;ndash;&amp;gt; Practice (Improving)
+←←←←←←←←←
+Assess #Tip &amp;ndash;&amp;gt; Ask yourself the following questions &amp;ndash; How familiar are you with algorithms? How much practice have you done? And most importantly, How well you can explain your thought process.
 How familiar are you with algorithms? I had a working understanding of most classical algorithms and their paradigms but never applied them in questions.</description>
     </item>
     
@@ -41,18 +43,12 @@ How familiar are you with algorithms? I had a working understanding of most clas
       <pubDate>Sun, 23 Jan 2022 07:17:25 +0530</pubDate>
       
       <guid>https://engineeringwith.kalkayan.io/series/interviewing/bloomberg/</guid>
-      <description>A place for programming titans who can code even in their sleep! — That’s the image I always had in my head about Google.
-When I saw a Linkedin job alert for a Technical Program Manager (TPM) position at Google that matched my work experience, I was delighted.
-But I kept no expectations in my head.</description>
-    </item>
-    
-    <item>
-      <title>Interviewing at Adobe for Internship</title>
-      <link>https://engineeringwith.kalkayan.io/series/interviewing/adobe/</link>
-      <pubDate>Sun, 23 Jan 2022 04:12:23 +0530</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/series/interviewing/adobe/</guid>
-      <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</description>
+      <description>Interviewing process is pretty straightforward at Bloomberg:
+Step 1  Apply online on their career website
+ &amp;lt; Resume /&amp;gt;
+ Step 2  If they like your application, You will receive an email asking to schedule your phone interview
+ &amp;lt; One 45 min coding interview /&amp;gt;
+ Step 3  If the initial interviewer gave you a positive feedback then you will be proceeded for the onsite interviews.</description>
     </item>
     
   </channel>
