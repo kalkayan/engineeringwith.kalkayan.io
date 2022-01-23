@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bloomberg on Engineering w/Kalkayan</title>
+    <link>https://engineeringwith.kalkayan.io/tags/bloomberg/</link>
+    <description>Recent content in bloomberg on Engineering w/Kalkayan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Jan 2022 07:17:25 +0530</lastBuildDate><atom:link href="https://engineeringwith.kalkayan.io/tags/bloomberg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interviewing at Bloomberg</title>
+      <link>https://engineeringwith.kalkayan.io/series/interviewing/bloomberg/</link>
+      <pubDate>Sun, 23 Jan 2022 07:17:25 +0530</pubDate>
+      
+      <guid>https://engineeringwith.kalkayan.io/series/interviewing/bloomberg/</guid>
+      <description>A place for programming titans who can code even in their sleep! — That’s the image I always had in my head about Google.
+When I saw a Linkedin job alert for a Technical Program Manager (TPM) position at Google that matched my work experience, I was delighted.
+But I kept no expectations in my head.</description>
+    </item>
+    
+  </channel>
+</rss>

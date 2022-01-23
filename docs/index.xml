@@ -6,45 +6,62 @@
     <description>Recent content on Engineering w/Kalkayan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Jan 2022 01:20:06 +0530</lastBuildDate><atom:link href="https://engineeringwith.kalkayan.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jan 2022 10:46:33 +0530</lastBuildDate><atom:link href="https://engineeringwith.kalkayan.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Googlyness at Google</title>
-      <link>https://engineeringwith.kalkayan.io/series/interviewing/google/googlyness/</link>
-      <pubDate>Tue, 11 Jan 2022 01:20:06 +0530</pubDate>
+      <title>Prepare your strategy [Tips minus the bullshit]</title>
+      <link>https://engineeringwith.kalkayan.io/series/interviewing/preparation/</link>
+      <pubDate>Sun, 23 Jan 2022 10:46:33 +0530</pubDate>
       
-      <guid>https://engineeringwith.kalkayan.io/series/interviewing/google/googlyness/</guid>
-      <description>What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</description>
+      <guid>https://engineeringwith.kalkayan.io/series/interviewing/preparation/</guid>
+      <description>#Tip &amp;ndash;&amp;gt; After getting an interview, the first thing you should do is assess yourself. Ask yourself the following questions &amp;ndash; How familiar are you with algorithms? How much practice have you done? And most importantly, How well you can explain your thought process.
+How familiar are you with algorithms? I had a working understanding of most classical algorithms and their paradigms but never applied them in questions.</description>
     </item>
     
     <item>
-      <title>Interviewing at Amazon Web Services</title>
+      <title>Test2</title>
+      <link>https://engineeringwith.kalkayan.io/posts/test2/</link>
+      <pubDate>Sun, 23 Jan 2022 07:51:15 +0530</pubDate>
+      
+      <guid>https://engineeringwith.kalkayan.io/posts/test2/</guid>
+      <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</description>
+    </item>
+    
+    <item>
+      <title>Interviewing at Google</title>
+      <link>https://engineeringwith.kalkayan.io/series/interviewing/google/</link>
+      <pubDate>Sun, 23 Jan 2022 07:17:44 +0530</pubDate>
+      
+      <guid>https://engineeringwith.kalkayan.io/series/interviewing/google/</guid>
+      <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</description>
+    </item>
+    
+    <item>
+      <title>Interviewing at Amazon</title>
       <link>https://engineeringwith.kalkayan.io/series/interviewing/amazon/</link>
-      <pubDate>Tue, 11 Jan 2022 01:20:06 +0530</pubDate>
+      <pubDate>Sun, 23 Jan 2022 07:17:29 +0530</pubDate>
       
       <guid>https://engineeringwith.kalkayan.io/series/interviewing/amazon/</guid>
-      <description>What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</description>
+      <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</description>
     </item>
     
     <item>
       <title>Interviewing at Bloomberg</title>
       <link>https://engineeringwith.kalkayan.io/series/interviewing/bloomberg/</link>
-      <pubDate>Tue, 11 Jan 2022 01:20:06 +0530</pubDate>
+      <pubDate>Sun, 23 Jan 2022 07:17:25 +0530</pubDate>
       
       <guid>https://engineeringwith.kalkayan.io/series/interviewing/bloomberg/</guid>
-      <description>What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</description>
+      <description>A place for programming titans who can code even in their sleep! — That’s the image I always had in my head about Google.
+When I saw a Linkedin job alert for a Technical Program Manager (TPM) position at Google that matched my work experience, I was delighted.
+But I kept no expectations in my head.</description>
     </item>
     
     <item>
-      <title>Questions for at Google</title>
-      <link>https://engineeringwith.kalkayan.io/series/interviewing/google/questions/</link>
-      <pubDate>Tue, 11 Jan 2022 01:20:06 +0530</pubDate>
+      <title>Interviewing at Adobe for Internship</title>
+      <link>https://engineeringwith.kalkayan.io/series/interviewing/adobe/</link>
+      <pubDate>Sun, 23 Jan 2022 04:12:23 +0530</pubDate>
       
-      <guid>https://engineeringwith.kalkayan.io/series/interviewing/google/questions/</guid>
-      <description>What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</description>
+      <guid>https://engineeringwith.kalkayan.io/series/interviewing/adobe/</guid>
+      <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</description>
     </item>
     
     <item>
@@ -57,65 +74,12 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     </item>
     
     <item>
-      <title>Automated Installation</title>
-      <link>https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-1/</link>
+      <title>Test Post</title>
+      <link>https://engineeringwith.kalkayan.io/posts/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-1/</guid>
-      <description>Setting up a new development machine is a long and painful process; nobody ever remembers what they have installed in their previous device. This guide is here to help you automate everything in your development setup and lets you enjoy the exciting feeling of getting a new machine.
-The guide has three parts: first is automating the installation of binaries and applications, then configuring code applications (vim, tmux, etc.) and customizing the operating system with dotfiles, and finally how to store and share them.</description>
-    </item>
-    
-    <item>
-      <title>Designing the Elekto Project under CNCF Internship</title>
-      <link>https://engineeringwith.kalkayan.io/posts/designing-elekto/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/posts/designing-elekto/</guid>
-      <description>The Elekto Project develops Elekto - simple software for secure online elections. Elekto was created as part of an LFX internship for the Kubernetes project under the guidance of Josh Berkus, Marky Jackson, Sergey Kanzhelev, and is now a CNCF infrastructure project.
-Why Elekto? Kubernetes and several other projects use CIVS for running Steering Committee elections. The voting logic of CIVS works, but it has several severe shortcomings like:
- It distributes all ballots by email, requiring tracking and handling of email addresses on a large scale.</description>
-    </item>
-    
-    <item>
-      <title>Designing the Official Newsletter of Delhi Technological University</title>
-      <link>https://engineeringwith.kalkayan.io/posts/designing-dtutimes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/posts/designing-dtutimes/</guid>
-      <description>DTU Times is the official university newsletter of Delhi Technological University, Bawana, Delhi. We are a team of 70 people, among which seven are responsible for the development of Web and Mobile APP.
-DTU Times’s technology may look like a simple blog application but, for a university newsletter, it has a significantly large infrastructure consists of many services.
-Like most web-based blogs, the DTU Times backend started as a “monolithic” software with some servers and a single database.</description>
-    </item>
-    
-    <item>
-      <title>Dotfiles Management</title>
-      <link>https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-3/</guid>
-      <description>Customizing an operating system has always fascinated programmers. There are tons of great articles out there with great customization tips. Most of these articles use dotfiles for customization, and these simple invisible files may seem pointless for a novice. But, they become a swiss army knife if properly configured.
-Personalizing a system takes a lot of time and hard work, and nobody wishes to do it over and over again. Setting up a machine with a preferred setting should be done in minimal steps and without writing any code.</description>
-    </item>
-    
-    <item>
-      <title>How to resolve your sad face when you mess up your git repo</title>
-      <link>https://engineeringwith.kalkayan.io/posts/git/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/posts/git/</guid>
-      <description>DTU Times is the official university newsletter of Delhi Technological University, Bawana, Delhi. We are a team of 70 people, among which seven are responsible for the development of Web and Mobile APP.
-DTU Times’s technology may look like a simple blog application but, for a university newsletter, it has a significantly large infrastructure consists of many services.
-Like most web-based blogs, the DTU Times backend started as a “monolithic” software with some servers and a single database.</description>
-    </item>
-    
-    <item>
-      <title>Setting up a Development Machine [Part 2]: Vim &#43; Bash Configurations</title>
-      <link>https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/posts/setting-up-a-development-machine-part-2/</guid>
-      <description>Customizing an operating system has always fascinated programmers. There are tons of great articles out there with great customization tips. Most of these articles use dotfiles for customization, and these simple invisible files may seem pointless for a novice. But, they become a swiss army knife if properly configured.</description>
+      <guid>https://engineeringwith.kalkayan.io/posts/test/</guid>
+      <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</description>
     </item>
     
   </channel>
