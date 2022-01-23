@@ -2,5 +2,5 @@
 Author: Manish Sahani
 title: "Series"
 description: >
-    Many nights of potential productive work programmers have lost by procrastinating on properly managing their dotfiles. This article discusses an elegant way to manage and share dotfiles across machines using a single git repository.
+    When an article is just not enough *"Series"* comes to save the day. Series is a collection of articles on a broader topic which are organized into a sequence. 
 ---
