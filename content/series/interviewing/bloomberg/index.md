@@ -5,43 +5,32 @@ draft: false
 description: If you have an upcoming Bloomberg interview for a software engineering role, this document is the collection of resources, questions. and tips that will most likely get you an offer.
 banner: "banner.png"
 tags: ["bloomberg"]
-categories: "interview"
+categories: "interviewing"
 ---
 
 
+### Interview process
+
 Interviewing process is pretty straightforward at Bloomberg:
 
-### Step 1
+>>  >> 
 
-> Apply online on their [career website](https://careers.bloomberg.com/)
-> 
-> 
-> ---
-> 
-> < Resume />
-> 
+{{< layouts/row >}}
 
-### Step 2
+    {{< layouts/col >}} 
+        Apply online on bloomberg's <a href="https://careers.bloomberg.com/">career</a> website.
+    {{< /layouts/col >}}
 
-> If they like your application, You will receive an email asking to schedule your phone interview
-> 
-> 
-> ---
-> 
-> < One 45 min coding interview />
-> 
+    {{< layouts/col >}} 
+        If they like your application, You will receive an email asking to schedule your phone interview 
+    {{< /layouts/col >}}
 
-### Step 3
+    {{< layouts/col >}} 
+        If the initial interviewer gave you a positive feedback then you will be proceeded for the onsite interviews.
+    {{< /layouts/col >}}
 
-> If the initial interviewer gave you a positive feedback then you will be proceeded for the onsite interviews.
-> 
-> 
-> ---
-> 
-> < Generally two coding Interviews />
-> 
+    {{< layouts/col >}}
+        System design Interview (depending on the experience)
+    {{< /layouts/col >}}
 
-### Step 4
-
-> System design Interview (depending on the experience)
->
+{{< /layouts/row >}}

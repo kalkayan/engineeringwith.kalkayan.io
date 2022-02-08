@@ -17,7 +17,8 @@ about: >
 
     > Please feel free to reach me for any query regarding any interview you may have at rec.manish.sahani@gmail.com
 
+footer: hi this is the footer of the series
 ---
 
-The course of this series is somewhat easy. In the first article, I share my preparation strategy and some things that I learned along the way, which contributed to the offers I received — followed by a deep dive into my interviewing experiences and the resources I used. Finally, ending the series with the conclusion and some more tips. 
+Motivation The course of this series is pretty simple. In the first article, I talk about my preparation strategy and some things that I learned along the way, which contributed to the offers I received — followed by a deep dive into my interviewing experiences and the resources I used. Finally, ending the series with the conclusion and some more tips. 
 

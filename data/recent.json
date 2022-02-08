@@ -1,5 +1,12 @@
 {
 	"home": [
-		"Added new article, about how to manage dotfiles on the system"
-	]
+		"New Series is published - [Thank you for your application](series/interviewing/).",
+		"The website is live ~ **Sunday, 6 February 2022**"
+	],
+	"series": {
+		"Thank you for your application": [
+			"Series created by Manish~ **Monday, 7 February, 2022**"
+		],
+		"dotfiles": []
+	}
 }

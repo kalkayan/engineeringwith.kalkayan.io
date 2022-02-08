@@ -1,5 +1,5 @@
 ---
-title: "Interview `Strategy` minus the bullshit"
+title: "Interview Strategy minus the bullshit"
 date: 2022-01-23T10:46:33+05:30
 draft: true
 description: "The article talks about how I prepared for my interviews and shares my learnings."
@@ -8,13 +8,39 @@ categories: "interview"
 next: "series/interviewing/google"
 ---
 
-`Assess` (Understanding) --> `Strategize` (approaching) --> `Practice` (Improving) 
+<!-- `Assess` (Understanding) --> `Strategize` (approaching) --> `Practice` (Improving)  -->
+
+
+When I was preparing there were a ton of article and vidoes out there which basically wasted my time, so the most . I'm gonna directly jump into the important stuff and try not to sugarcoat anything.
 
 ←←←←←←←←←
+
 
 # Assess
 
 `#Tip` --> Ask yourself the following questions -- How familiar are you with algorithms? How much practice have you done? And most importantly, How well you can explain your thought process.
+
+
+{{< layouts/row >}}
+
+    {{< layouts/col >}} 
+        Apply online on bloomberg's <a href="https://careers.bloomberg.com/">career</a> website.
+    {{< /layouts/col >}}
+
+    {{< layouts/col >}} 
+        If they like your application, You will receive an email asking to schedule your phone interview 
+    {{< /layouts/col >}}
+
+    {{< layouts/col >}} 
+        If the initial interviewer gave you a positive feedback then you will be proceeded for the onsite interviews.
+    {{< /layouts/col >}}
+
+    {{< layouts/col >}}
+        System design Interview (depending on the experience)
+    {{< /layouts/col >}}
+
+{{< /layouts/row >}}
+
 
 ###### How familiar are you with algorithms?
 

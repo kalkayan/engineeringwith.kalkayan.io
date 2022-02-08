@@ -6,15 +6,22 @@ publishDir = 'docs'
 paginate = 3
 pluralizelisttitles = false
 summaryLength = 50
+enableGitInfo = true
 
 [Author]
     name = 'Manish Sahani'
     github = 'kalkayan'
 
 [params]
-    title = "This is the where the title will be"
-    # subtitle = "This site may feel like a blog but its not."
     mainSections = []
+
+	announcement = "Hi, thanks for checking the site but, its under construction."
+
+[params.props]
+    title = "Engineering w/kalkayan"
+	banner = "/banner.png"
+    subtitle = "Hi, I'm Manish. I work at adobe on software that syncs design files (.XD, .psd or other cloud-native files) to the shared cloud."
+	
 
 [[params.social]]
     name = 'github'
@@ -22,15 +29,11 @@ summaryLength = 50
 
 [[params.social]]
     name = 'linkedin'
-    url = 'https://github.com/kalkayan/'
+    url = 'https://www.linkedin.com/in/manishsahani/'
 
 [[params.social]]
-    name = 'twitter'
-    url = 'https://github.com/kalkayan/'
-
-[[params.social]]
-    name = 'slack'
-    url = 'https://github.com/kalkayan/'
+    name = 'stackoverflow'
+    url = 'https://stackoverflow.com/users/14526555/manish-sahani'
 
 [module]
 [[module.mounts]]
