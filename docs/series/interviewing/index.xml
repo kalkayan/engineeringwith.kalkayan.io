@@ -8,15 +8,32 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Jan 2022 04:10:54 +0530</lastBuildDate><atom:link href="https://engineeringwith.kalkayan.io/series/interviewing/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Interview `Strategy` minus the bullshit</title>
+      <title>For Somewhat Intermediate</title>
+      <link>https://engineeringwith.kalkayan.io/series/interviewing/for-somewhat-intermediate/</link>
+      <pubDate>Tue, 08 Feb 2022 03:03:46 +0530</pubDate>
+      
+      <guid>https://engineeringwith.kalkayan.io/series/interviewing/for-somewhat-intermediate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>For Absolute Beginner - No Interviewing Experience</title>
+      <link>https://engineeringwith.kalkayan.io/series/interviewing/for-absolute-beginner/</link>
+      <pubDate>Tue, 08 Feb 2022 02:46:23 +0530</pubDate>
+      
+      <guid>https://engineeringwith.kalkayan.io/series/interviewing/for-absolute-beginner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interview Strategy minus the bullshit</title>
       <link>https://engineeringwith.kalkayan.io/series/interviewing/preparation/</link>
       <pubDate>Sun, 23 Jan 2022 10:46:33 +0530</pubDate>
       
       <guid>https://engineeringwith.kalkayan.io/series/interviewing/preparation/</guid>
-      <description>Assess (Understanding) &amp;ndash;&amp;gt; Strategize (approaching) &amp;ndash;&amp;gt; Practice (Improving)
+      <description>When I was preparing there were a ton of article and vidoes out there which basically wasted my time, so the most . I&amp;rsquo;m gonna directly jump into the important stuff and try not to sugarcoat anything.
 ←←←←←←←←←
-Assess #Tip &amp;ndash;&amp;gt; Ask yourself the following questions &amp;ndash; How familiar are you with algorithms? How much practice have you done? And most importantly, How well you can explain your thought process.
-How familiar are you with algorithms? I had a working understanding of most classical algorithms and their paradigms but never applied them in questions.</description>
+Assess #Tip &amp;ndash;&amp;gt; Ask yourself the following questions &amp;ndash; How familiar are you with algorithms?</description>
     </item>
     
     <item>
@@ -43,12 +60,8 @@ How familiar are you with algorithms? I had a working understanding of most clas
       <pubDate>Sun, 23 Jan 2022 07:17:25 +0530</pubDate>
       
       <guid>https://engineeringwith.kalkayan.io/series/interviewing/bloomberg/</guid>
-      <description>Interviewing process is pretty straightforward at Bloomberg:
-Step 1  Apply online on their career website
- &amp;lt; Resume /&amp;gt;
- Step 2  If they like your application, You will receive an email asking to schedule your phone interview
- &amp;lt; One 45 min coding interview /&amp;gt;
- Step 3  If the initial interviewer gave you a positive feedback then you will be proceeded for the onsite interviews.</description>
+      <description>Interview process Interviewing process is pretty straightforward at Bloomberg:
+        Apply online on bloomberg&#39;s career website.  If they like your application, You will receive an email asking to schedule your phone interview  If the initial interviewer gave you a positive feedback then you will be proceeded for the onsite interviews.</description>
     </item>
     
   </channel>

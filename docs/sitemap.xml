@@ -2,14 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://engineeringwith.kalkayan.io/posts/</loc>
+    <loc>https://engineeringwith.kalkayan.io/</loc>
+    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/series/interviewing/for-somewhat-intermediate/</loc>
+    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/series/interviewing/for-absolute-beginner/</loc>
+    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
   </url><url>
     <loc>https://engineeringwith.kalkayan.io/categories/</loc>
+    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
   </url><url>
-    <loc>https://engineeringwith.kalkayan.io/</loc>
+    <loc>https://engineeringwith.kalkayan.io/categories/interview/</loc>
+    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
   </url><url>
-    <loc>https://engineeringwith.kalkayan.io/series/</loc>
+    <loc>https://engineeringwith.kalkayan.io/series/interviewing/preparation/</loc>
+    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/posts/test2/</loc>
+    <lastmod>2022-01-23T12:40:26+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/series/interviewing/google/</loc>
+    <lastmod>2022-01-23T14:24:50+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/series/interviewing/amazon/</loc>
+    <lastmod>2022-01-23T12:40:26+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/tags/bloomberg/</loc>
+    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/categories/interviewing/</loc>
+    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/series/interviewing/bloomberg/</loc>
+    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
   </url><url>
     <loc>https://engineeringwith.kalkayan.io/tags/</loc>
+    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/series/interviewing/</loc>
+    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/about/</loc>
+    <lastmod>2022-01-11T04:59:25+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/about/about/</loc>
+    <lastmod>2022-01-11T04:59:25+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/posts/</loc>
+    <lastmod>2022-01-23T12:40:26+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/series/</loc>
+    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/posts/test/</loc>
+    <lastmod>2022-01-23T12:40:26+05:30</lastmod>
   </url>
 </urlset>
