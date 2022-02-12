@@ -4,7 +4,6 @@ date: 2022-01-23T04:10:54+05:30
 draft: true
 author: Manish Sahani
 layout: "pages/series"
-banner: banner.png
 subtitle: "We appreciate your effort so far, and if there is a good fit to our needs, we will contact you."
 description: >
     This series is an aftermath of my interview experiences at some tech companies like - Google, Amazon, Adobe, and a few more. I share my interview experience and my preparation strategy minus the bullshit.
