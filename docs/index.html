@@ -57,8 +57,18 @@
             
         
             
-                <li class="nav-item border-start  border-end  space px-4 text-center">
-                    <a class="nav-link" href="https://engineeringwith.kalkayan.io/series/">Series</a>
+                <li class="nav-item dropdown border-start space px-4  border-end ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Series
+                    </a>
+                    <ul class="dropdown-menu p-0 border" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item px-3 border-bottom nav-link" href="https://engineeringwith.kalkayan.io/series/">All Series</a></li>
+                        
+                        <li><a class="dropdown-item px-3 border-bottom nav-link" href="https://engineeringwith.kalkayan.io/series/developer-experience/">Dotfiles - the swiss army knife</a></li>
+                        
+                        <li><a class="dropdown-item px-3 border-bottom nav-link" href="https://engineeringwith.kalkayan.io/series/interviewing/">Thank you for your application</a></li>
+                        
+                    </ul>
                 </li>
             
         
@@ -101,26 +111,25 @@
     </div>
   </div>
 </nav>
-<div id="content">
 
-    
-    
-
-    
-    
-    
-
-
-	
-    <section class="section border-bottom ">
+        <section class="section border-bottom ">
     <div class="container">
-		<div class=space >
-            <p class="typo typo-gradient mb-0 text-center">Hi, thanks for checking the site but, its under construction.</p>
+		<div class=space--sm >
+            <p class="text-center typo typo-gradient mb-0">Hi, thanks for checking the site but, its under construction. The articles and other data is neither complete nor reviewed.</p>
         </div>
     </div>
 </section>
 
-	
+        
+
+        <div id="content">
+
+    
+    
+
+    
+    
+    
 
 
     
@@ -148,9 +157,9 @@
     <section class="section border-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 border-start border-end--sm border-bottom-sm px-5 space--sm d-flex align-items-center">
-                    <div>
-                        <h1 class="typo-lg mx-auto">Recent Things</h1>
+                <div class="col-md-4 border-start border-end--sm border-bottom-sm px-5 space--lg d-flex align-items-center">
+                    <div class="mx-auto">
+                        <h1 class="typo-lg ">Recent Things</h1>
                         
 						<div class="typo-xs text-muted mb-2"> ○ New Series is published - <a href="series/interviewing/">Thank you for your application</a>.</div>
                         
@@ -182,26 +191,6 @@
                      
                         <div class="space--sm px-5 border-bottom">
                             <h3 class="typo-lg">
-                                <a class="text-dark" href="https://engineeringwith.kalkayan.io/series/interviewing/bloomberg/">Interviewing at Bloomberg</a>
-                            </h3>
-                            <div class="catalogue-line"></div>
-
-                            <p class="text-muted">
-                            <small>
-                                
-                                    Interview process Interviewing process is pretty straightforward at Bloomberg:
-        Apply online on bloomberg's career website.  If they like your application, You will receive an email asking to schedule your phone interview  If the initial interviewer gave you a positive feedback then you will be proceeded for the onsite interviews.
-                                
-                            </small>
-                            </p>
-
-							<p> 
-								<a href="https://engineeringwith.kalkayan.io/series/interviewing/bloomberg/">Read More</a>		
-							</p>
-                        </div>
-                     
-                        <div class="space--sm px-5 border-bottom">
-                            <h3 class="typo-lg">
                                 <a class="text-dark" href="https://engineeringwith.kalkayan.io/series/interviewing/amazon/">Interviewing at Amazon</a>
                             </h3>
                             <div class="catalogue-line"></div>
@@ -216,6 +205,25 @@
 
 							<p> 
 								<a href="https://engineeringwith.kalkayan.io/series/interviewing/amazon/">Read More</a>		
+							</p>
+                        </div>
+                     
+                        <div class="space--sm px-5 border-bottom">
+                            <h3 class="typo-lg">
+                                <a class="text-dark" href="https://engineeringwith.kalkayan.io/series/interviewing/google/">Interviewing at Google</a>
+                            </h3>
+                            <div class="catalogue-line"></div>
+
+                            <p class="text-muted">
+                            <small>
+                                
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                
+                            </small>
+                            </p>
+
+							<p> 
+								<a href="https://engineeringwith.kalkayan.io/series/interviewing/google/">Read More</a>		
 							</p>
                         </div>
                     
@@ -258,8 +266,8 @@
     
 
     
-    
 	
+
     
     <section class="section border-bottom">
         <div class="container">
@@ -267,12 +275,25 @@
                 <div class="col-md-4 my-auto text-center">
                     <h1 class="typo-md mb-0"># Popular Categories</h1>
                 </div>
-                <div class="col-md-8 p-0 border-start">
+                <div class="col-md-8 px-0 border-start">
                     <div class="row p-0">
                          
                             
                                 
-                                <div class="col-md-6 text-center space border-bottom-sm border-end ">
+                                <div class="col-md-6 text-center space--sm border-bottom-sm ">
+                                    
+                                            <a href=/categories/development-experience/ class="text-muted" title="All pages with tag development-experience">
+                                                <small>development-experience</small>
+                                            </a>
+                                            
+                                    
+                                </div>
+                                
+                            
+                         
+                            
+                                
+                                <div class="col-md-6 text-center space--sm border-bottom-sm border-end ">
                                     
                                             <a href=/categories/interview/ class="text-muted" title="All pages with tag interview">
                                                 <small>interview</small>
@@ -285,7 +306,7 @@
                          
                             
                                 
-                                <div class="col-md-6 text-center space border-bottom-sm ">
+                                <div class="col-md-6 text-center space--sm border-bottom-sm ">
                                     
                                             <a href=/categories/interviewing/ class="text-muted" title="All pages with tag interviewing">
                                                 <small>interviewing</small>
@@ -307,7 +328,7 @@
     <section class="section border-bottom ">
     <div class="container">
 		<div class=border-start&#32;border-end&#32;px-3&#32;space--md >
-            <p class="typo-lg mb-0 text-center">Explore</p>
+            <p class="text-center typo-lg mb-0">Explore</p>
         </div>
     </div>
 </section>
@@ -322,7 +343,7 @@
 
                     
                     
-                        <h1 class="typo-xl mb-4">Articles</h1>
+						<h1 class="typo-xl mb-4">Articles</h1>
                     
 
                     
@@ -354,7 +375,7 @@
 
                     
                     
-                        <h1 class="typo-xl mb-4">Series</h1>
+						<h1 class="typo-xl mb-4">Series</h1>
                     
 
                     
@@ -403,6 +424,45 @@
                                     </div>
                                     
                                 
+                             
+                                
+                                    
+                                    <div class="col-md-2 text-center py-3  border-end ">
+                                        
+                                                <a href=/tags/git/ class="text-muted" title="All pages with tag git">
+                                                    <small>git</small>
+                                                </a>
+                                                
+                                        
+                                    </div>
+                                    
+                                
+                             
+                                
+                                    
+                                    <div class="col-md-2 text-center py-3  border-end ">
+                                        
+                                                <a href=/tags/git-bare/ class="text-muted" title="All pages with tag git-bare">
+                                                    <small>git-bare</small>
+                                                </a>
+                                                
+                                        
+                                    </div>
+                                    
+                                
+                             
+                                
+                                    
+                                    <div class="col-md-2 text-center py-3  ">
+                                        
+                                                <a href=/tags/tooling/ class="text-muted" title="All pages with tag tooling">
+                                                    <small>tooling</small>
+                                                </a>
+                                                
+                                        
+                                    </div>
+                                    
+                                
                             
                         </div>
                     </div>
@@ -418,7 +478,7 @@
     <section class="section  ">
     <div class="container">
 		<div class=border-start&#32;border-end&#32;px-3&#32;space--md >
-            <p class="typo mb-0 text-center">Ask a question or just simply say hello at <a href="mailto:rec.manish.sahani@gmail.com">rec.manish.sahani@gmail.com</a></p>
+            <p class="text-center typo mb-0">Ask a question or just simply say hello at <a href="mailto:rec.manish.sahani@gmail.com">rec.manish.sahani@gmail.com</a></p>
         </div>
     </div>
 </section>

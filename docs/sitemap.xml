@@ -2,16 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://engineeringwith.kalkayan.io/series/developer-experience/automate-the-installation-roger-roger/</loc>
+    <lastmod>2022-02-12T06:28:28+05:30</lastmod>
+  </url><url>
     <loc>https://engineeringwith.kalkayan.io/</loc>
-    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
+    <lastmod>2022-02-12T06:28:28+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/series/developer-experience/levelling-up-the-bash-game/</loc>
+    <lastmod>2022-02-12T06:28:28+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/categories/</loc>
+    <lastmod>2022-02-12T06:28:28+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/categories/development-experience/</loc>
+    <lastmod>2022-02-12T06:28:28+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/tags/git/</loc>
+    <lastmod>2022-02-12T06:28:28+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/tags/git-bare/</loc>
+    <lastmod>2022-02-12T06:28:28+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/series/developer-experience/storing-dotfiles-with-git-this-is-the-way/</loc>
+    <lastmod>2022-02-12T06:28:28+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/tags/</loc>
+    <lastmod>2022-02-12T06:28:28+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/tags/tooling/</loc>
+    <lastmod>2022-02-12T06:28:28+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/series/developer-experience/</loc>
+    <lastmod>2022-02-12T06:28:28+05:30</lastmod>
+  </url><url>
+    <loc>https://engineeringwith.kalkayan.io/series/developer-experience/dotfiles-are-easier-than-one-might-think/</loc>
+    <lastmod>2022-02-12T06:28:28+05:30</lastmod>
   </url><url>
     <loc>https://engineeringwith.kalkayan.io/series/interviewing/for-somewhat-intermediate/</loc>
     <lastmod>2022-02-09T03:12:10+05:30</lastmod>
   </url><url>
     <loc>https://engineeringwith.kalkayan.io/series/interviewing/for-absolute-beginner/</loc>
-    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
-  </url><url>
-    <loc>https://engineeringwith.kalkayan.io/categories/</loc>
     <lastmod>2022-02-09T03:12:10+05:30</lastmod>
   </url><url>
     <loc>https://engineeringwith.kalkayan.io/categories/interview/</loc>
@@ -38,11 +68,8 @@
     <loc>https://engineeringwith.kalkayan.io/series/interviewing/bloomberg/</loc>
     <lastmod>2022-02-09T03:12:10+05:30</lastmod>
   </url><url>
-    <loc>https://engineeringwith.kalkayan.io/tags/</loc>
-    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
-  </url><url>
     <loc>https://engineeringwith.kalkayan.io/series/interviewing/</loc>
-    <lastmod>2022-02-09T03:12:10+05:30</lastmod>
+    <lastmod>2022-02-12T06:28:28+05:30</lastmod>
   </url><url>
     <loc>https://engineeringwith.kalkayan.io/about/</loc>
     <lastmod>2022-01-11T04:59:25+05:30</lastmod>

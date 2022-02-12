@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tooling on Engineering w/Kalkayan</title>
+    <link>https://engineeringwith.kalkayan.io/tags/tooling/</link>
+    <description>Recent content in tooling on Engineering w/Kalkayan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Feb 2022 18:15:45 +0530</lastBuildDate><atom:link href="https://engineeringwith.kalkayan.io/tags/tooling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Storing Dotfiles with git - This is the way</title>
+      <link>https://engineeringwith.kalkayan.io/series/developer-experience/storing-dotfiles-with-git-this-is-the-way/</link>
+      <pubDate>Fri, 11 Feb 2022 18:15:45 +0530</pubDate>
+      
+      <guid>https://engineeringwith.kalkayan.io/series/developer-experience/storing-dotfiles-with-git-this-is-the-way/</guid>
+      <description>Customizing an operating system has always fascinated programmers. There are tons of great articles out there with great customization tips. Most of these articles use dotfiles for customization, and these simple invisible files may seem pointless for a novice. But, they become a swiss army knife if properly configured.
+Personalizing a system takes a lot of time and hard work, and nobody wishes to do it over and over again.</description>
+    </item>
+    
+  </channel>
+</rss>
