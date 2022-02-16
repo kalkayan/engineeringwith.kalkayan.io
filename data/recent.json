@@ -1,6 +1,6 @@
 {
 	"home": [
-		"New Series is published - [Thank you for your application](series/interviewing/).",
+		"New Series is published - [Dotfiles - the swiss army knife](/series/developer-experience/).",
 		"The website is live ~ **Sunday, 6 February 2022**"
 	],
 	"series": {
@@ -8,8 +8,8 @@
 			"Series created by Manish~ **Monday, 7 February, 2022**"
 		],
 		"Dotfiles - the swiss army knife": [
-            "New article published in the series -- [Storing Dotfiles with git - This is the way](/series/developer-experience/storing-dotfiles-with-git-this-is-the-way/) | **12 Feb, 2022**",
-            "New article published -- [Dotfiles Are Easier Than One Might Think](/series/developer-experience/dotfiles-are-easier-than-one-might-think/) | **12 Feb, 2022**",
+        
+			"New article published in the series -- [Storing Dotfiles with git - This is the way](/series/developer-experience/storing-dotfiles-with-git-this-is-the-way/) | **February 16, 2022**",
             "Series created by Manish | **11 Feb, 2022**"
         ]
 	}

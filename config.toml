@@ -32,8 +32,9 @@ enableGitInfo = true
     url = 'https://www.linkedin.com/in/manishsahani/'
 
 [[params.social]]
-    name = 'stackoverflow'
-    url = 'https://stackoverflow.com/users/14526555/manish-sahani'
+    name = 'gmail'
+    url = 'mailto:rec.manish.sahani@gmail.com'
+
 
 [module]
 [[module.mounts]]
