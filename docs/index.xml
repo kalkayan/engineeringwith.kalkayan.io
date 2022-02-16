@@ -6,127 +6,14 @@
     <description>Recent content on Engineering w/Kalkayan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Feb 2022 05:49:13 +0530</lastBuildDate><atom:link href="https://engineeringwith.kalkayan.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Automate the Installation - Roger Roger</title>
-      <link>https://engineeringwith.kalkayan.io/series/developer-experience/automate-the-installation-roger-roger/</link>
-      <pubDate>Sat, 12 Feb 2022 05:49:13 +0530</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/series/developer-experience/automate-the-installation-roger-roger/</guid>
-      <description>Setting up a new development machine is a long and painful process; nobody ever remembers what they have installed in their previous device. This guide is here to help you automate everything in your development setup and lets you enjoy the exciting feeling of getting a new machine.
-The guide has three parts: first is automating the installation of binaries and applications, then configuring code applications (vim, tmux, etc.</description>
-    </item>
-    
-    <item>
-      <title>Levelling up the bash game - Power! Unlimited Power!</title>
-      <link>https://engineeringwith.kalkayan.io/series/developer-experience/levelling-up-the-bash-game/</link>
-      <pubDate>Sat, 12 Feb 2022 02:00:59 +0530</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/series/developer-experience/levelling-up-the-bash-game/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Fri, 11 Feb 2022 18:15:45 +0530</lastBuildDate><atom:link href="https://engineeringwith.kalkayan.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Storing Dotfiles with git - This is the way</title>
       <link>https://engineeringwith.kalkayan.io/series/developer-experience/storing-dotfiles-with-git-this-is-the-way/</link>
       <pubDate>Fri, 11 Feb 2022 18:15:45 +0530</pubDate>
       
       <guid>https://engineeringwith.kalkayan.io/series/developer-experience/storing-dotfiles-with-git-this-is-the-way/</guid>
-      <description>Customizing an operating system has always fascinated programmers. There are tons of great articles out there with great customization tips. Most of these articles use dotfiles for customization, and these simple invisible files may seem pointless for a novice. But, they become a swiss army knife if properly configured.
-Personalizing a system takes a lot of time and hard work, and nobody wishes to do it over and over again.</description>
-    </item>
-    
-    <item>
-      <title>Dotfiles Are Easier Than One Might Think</title>
-      <link>https://engineeringwith.kalkayan.io/series/developer-experience/dotfiles-are-easier-than-one-might-think/</link>
-      <pubDate>Fri, 11 Feb 2022 01:52:15 +0530</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/series/developer-experience/dotfiles-are-easier-than-one-might-think/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>For Somewhat Intermediate</title>
-      <link>https://engineeringwith.kalkayan.io/series/interviewing/for-somewhat-intermediate/</link>
-      <pubDate>Tue, 08 Feb 2022 03:03:46 +0530</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/series/interviewing/for-somewhat-intermediate/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>For Absolute Beginner - No Interviewing Experience</title>
-      <link>https://engineeringwith.kalkayan.io/series/interviewing/for-absolute-beginner/</link>
-      <pubDate>Tue, 08 Feb 2022 02:46:23 +0530</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/series/interviewing/for-absolute-beginner/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Interview Strategy minus the bullshit</title>
-      <link>https://engineeringwith.kalkayan.io/series/interviewing/preparation/</link>
-      <pubDate>Sun, 23 Jan 2022 10:46:33 +0530</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/series/interviewing/preparation/</guid>
-      <description>When I was preparing there were a ton of article and vidoes out there which basically wasted my time, so the most . I&amp;rsquo;m gonna directly jump into the important stuff and try not to sugarcoat anything.
-←←←←←←←←←
-Assess #Tip &amp;ndash;&amp;gt; Ask yourself the following questions &amp;ndash; How familiar are you with algorithms?</description>
-    </item>
-    
-    <item>
-      <title>Test2</title>
-      <link>https://engineeringwith.kalkayan.io/posts/test2/</link>
-      <pubDate>Sun, 23 Jan 2022 07:51:15 +0530</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/posts/test2/</guid>
-      <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</description>
-    </item>
-    
-    <item>
-      <title>Interviewing at Google</title>
-      <link>https://engineeringwith.kalkayan.io/series/interviewing/google/</link>
-      <pubDate>Sun, 23 Jan 2022 07:17:44 +0530</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/series/interviewing/google/</guid>
-      <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</description>
-    </item>
-    
-    <item>
-      <title>Interviewing at Amazon</title>
-      <link>https://engineeringwith.kalkayan.io/series/interviewing/amazon/</link>
-      <pubDate>Sun, 23 Jan 2022 07:17:29 +0530</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/series/interviewing/amazon/</guid>
-      <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</description>
-    </item>
-    
-    <item>
-      <title>Interviewing at Bloomberg</title>
-      <link>https://engineeringwith.kalkayan.io/series/interviewing/bloomberg/</link>
-      <pubDate>Sun, 23 Jan 2022 07:17:25 +0530</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/series/interviewing/bloomberg/</guid>
-      <description>Interview process Interviewing process is pretty straightforward at Bloomberg:
-        Apply online on bloomberg&#39;s career website.  If they like your application, You will receive an email asking to schedule your phone interview  If the initial interviewer gave you a positive feedback then you will be proceeded for the onsite interviews.</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://engineeringwith.kalkayan.io/about/about/</link>
-      <pubDate>Fri, 31 Dec 2021 03:09:23 +0530</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/about/about/</guid>
-      <description>About Me</description>
-    </item>
-    
-    <item>
-      <title>Test Post</title>
-      <link>https://engineeringwith.kalkayan.io/posts/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://engineeringwith.kalkayan.io/posts/test/</guid>
-      <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</description>
+      <description>It certainly takes much time to tailor a machine to fit the development needs. Moreover, this is a never-ending continous process, and the configurations evolve with experience and time. Even though configurations are an integral part of the day-to-day work of a software engineer, one may lose sight of protecting and maintaining it, and nights of potential productive work get lost due to procrastinating on properly storing these configuration files.</description>
     </item>
     
   </channel>
