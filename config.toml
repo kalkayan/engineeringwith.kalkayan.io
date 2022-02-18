@@ -2,7 +2,6 @@ baseURL = 'https://engineeringwith.kalkayan.io'
 languageCode = 'en-us'
 title = 'Engineering w/Kalkayan'
 theme = "seydoux"
-publishDir = 'docs'
 paginate = 3
 pluralizelisttitles = false
 summaryLength = 50

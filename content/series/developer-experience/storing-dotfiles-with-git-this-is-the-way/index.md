@@ -33,6 +33,9 @@ The above method does not mean doing `cd $HOME && git init .` and creating an ex
 
 The trick to managing only the certain dotfiles present in $HOME and not the entire $HOME directory is by creating a bare git repository. As a first-time user of this method, make a bare repository in the $HOME directory. 
 
+![code 1](https://carbon.now.sh/?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=nord&wt=none&l=application%2Fx-sh&width=795&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=8px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=alias%2520dotfiles%253D%2522%252Fusr%252Fbin%252Fgit%2520--git-dir%253D%2524HOME%252F.dotfiles%2520--work-tree%253D%2524HOME%2522%2520)
+
+
 ```bash
 # Notice the --bare flag; this initializes the repository as a git bare
 git init --bare $HOME/.dotfiles
