@@ -1,4 +1,3 @@
-baseURL = 'https://engineeringwith.kalkayan.io'
 languageCode = 'en-us'
 title = 'Engineering w/Kalkayan'
 theme = "seydoux"
@@ -13,13 +12,14 @@ enableGitInfo = true
 
 [params]
     mainSections = []
+    navSections = ['posts', 'series']
 
 	announcement = "Hi, thanks for checking the site but, its under construction. The articles and other data is neither complete nor reviewed."
 
 [params.props]
     title = "Engineering w/kalkayan"
 	banner = "/banner.png"
-    subtitle = "Hi, I'm Manish. I work at adobe on software that syncs design files (.XD, .psd or other cloud-native files) to the shared cloud."
+    subtitle = "Hi, I'm [Manish Sahani](https://www.linkedin.com/in/manishsahani/). I write here between standups, code reviews, and Jira stories."
 	
 
 [[params.social]]

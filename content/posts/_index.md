@@ -1,5 +1,5 @@
 ---
 title: "Articles"
 description: >
-    Many nights of potential productive work programmers have lost by procrastinating on properly managing their dotfiles. This article discusses an elegant way to manage and share dotfiles across machines using a single git repository.
+    Articles are divine short coherent stories, cherry-picked from my experience and shaped in such a way to share some knowledge out of it.
 ---
