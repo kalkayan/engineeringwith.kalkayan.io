@@ -6,6 +6,9 @@ pluralizelisttitles = false
 summaryLength = 50
 enableGitInfo = true
 
+
+googleAnalytics = 'G-073MWF264K'
+
 [Author]
     name = 'Manish Sahani'
     github = 'kalkayan'
@@ -19,7 +22,8 @@ enableGitInfo = true
 [params.props]
     title = "Engineering w/kalkayan"
 	banner = "/banner.png"
-    subtitle = "Hi, I'm [Manish Sahani](https://www.linkedin.com/in/manishsahani/). I write here between standups, code reviews, and Jira stories."
+    #subtitle = "Hi, I'm [Manish Sahani](https://www.linkedin.com/in/manishsahani/). I write here between standups, code reviews, and Jira stories."
+    subtitle = "There is plenty of stuff to do and not enough brains to break things. We are getting nobler in thoughts and weaker in action. Something has to change. Something has to give. So, I suggest, pick a damn thing and stick to it. "
 	
 
 [[params.social]]
