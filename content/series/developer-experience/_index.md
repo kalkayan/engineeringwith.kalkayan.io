@@ -21,7 +21,7 @@ about: >
 footer: >
     Have a look at my dotfiles - https://github.com/kalkayan/dotfiles
 
-banner: banner.png
+# banner: banner.png
 layout: pages/series
 header: components/sections/wide
 ---

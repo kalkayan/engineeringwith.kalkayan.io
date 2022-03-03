@@ -125,6 +125,7 @@ dotfiles checkout work && source ~/.zshrc
 
 The list doesn't end here. These are just some examples that I have used in day-to-day activities. One can develop more practical usage of tracking dotfiles with git. 
 
+
 This article's recap is that elegant solutions don't have to be fancy. It's good to use something familiar for better use of time. Always prefer less/no dependency on other software. Most importantly, try not to get overwhelmed by the things on the internet - pick the solutions that satisfy the needs. 
 
 
