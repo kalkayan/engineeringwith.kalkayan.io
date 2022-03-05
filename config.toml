@@ -1,3 +1,4 @@
+baseURL = "https://engineeringwith.kalkayan.io/"
 languageCode = 'en-us'
 title = 'Engineering w/Kalkayan'
 theme = "seydoux"
@@ -8,6 +9,13 @@ enableGitInfo = true
 
 
 googleAnalytics = 'G-073MWF264K'
+
+
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
 
 [Author]
     name = 'Manish Sahani'
