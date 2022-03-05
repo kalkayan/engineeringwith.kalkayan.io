@@ -6,9 +6,7 @@ command = "hugo --gc --minify"
 HUGO_VERSION = "0.93.2"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
-HUGO_HEAD_PREFETCH = "true"
-HUGO_HEAD_PRECONNECT = "true"
-HUGO_HEAD_PRELOAD = "true"
+HUGO_HEAD_OPTIMIZE_STRATEGY = "dns-prefetch,preconnect,preload"
 
 [context.deploy-preview]
 command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
