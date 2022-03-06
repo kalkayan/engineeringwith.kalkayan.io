@@ -1,6 +1,6 @@
 ---
 title: "Storing dotfiles with Git - This is the way"
-date: 2022-02-11T18:15:45+05:30
+date: 2022-03-07T04:15:45+05:30
 draft: false
 author: Manish Sahani
 description: > 
