@@ -1,7 +1,7 @@
 ---
 title: "Dotfiles Are Easier Than You Might Think"
 date: 2022-02-11T01:52:15+05:30
-draft: false
+draft: true
 description: >
     Dotfiles are all about boosting productivity by tailoring the machine's configurations to the developer's personalized needs. This article looks into the straightforward but powerful configurations one can have and master within a few minutes.
 tags: ["tooling", "bash", "zsh"]

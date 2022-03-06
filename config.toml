@@ -22,10 +22,10 @@ googleAnalytics = 'G-073MWF264K'
     github = 'kalkayan'
 
 [params]
-    mainSections = []
+    mainSections = ['posts', 'series']
     navSections = ['posts', 'series']
 
-	announcement = "Hi, thanks for checking the site but, its under construction. The articles and other data is neither complete nor reviewed."
+	#announcement = "Hi, thanks for checking the site but, its under construction. The articles and other data is neither complete nor reviewed."
 
 [params.props]
     title = "Engineering w/kalkayan"
