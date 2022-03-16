@@ -21,4 +21,4 @@ command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 package = "netlify-plugin-checklinks"
 
 [plugins.inputs]
-skipPatterns = ["https://fonts.gstatic.com/*"]
+skipPatterns = ['https://fonts.gstatic.com']
