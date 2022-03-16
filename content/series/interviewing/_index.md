@@ -1,7 +1,7 @@
 ---
 title: "Thank you for your application"
 date: 2022-01-23T04:10:54+05:30
-draft: true
+draft: flase
 author: Manish Sahani
 layout: "pages/series"
 subtitle: "We appreciate your effort so far, and if there is a good fit to our needs, we will contact you."

@@ -1,17 +1,34 @@
 ---
-title: "Automate the Installation - Roger Roger"
+title: "Automate the installations - Roger Roger"
 date: 2022-02-12T05:49:13+05:30
 draft: true
-description: ""
+description: >
+    Learn a no-code way to automate your installations. After this, you won't need to write scripts to automate your machine setup.
 tags: []
 categories: ""
 ---
 
-Setting up a new development machine is a long and painful process; nobody ever remembers what they have installed in their previous device. This guide is here to help you automate everything in your development setup and lets you enjoy the exciting feeling of getting a new machine.
+You may be new to the dotfiles with no experience writing a setup script or familiar with this world of dotfiles and possibly have an excellent setup script. Either way, this article will introduce a whole new way of setting up your systems and automating other tasks. Hopefully, by the end of this article, you will be planning to shorten your setup script (possibly to 3 - 5 lines); if not, delete it altogether. 
+
+# What are automation scripts?
+
+Automation scripts are concise, highly targeted code written to turn time-consuming, repetitive work into a single command. These could be the setup of a development machine, specific software, and many other things. Writing them is like doing overtime work for which you aren't going to get paid in money but in time. 
+
+In this article, we will build a script with almost no code, and then we can generalize the same for other tasks. 
+
+# What seems to be the problem, officer?
+
+Setups scripts have their fair share of popularity in the Linux and macOS communities; there are roughly five thousand repositories just to set up a macOS machine. 
+
+
+<!-- Always pass on what you have learned. -->
+
+
+<!-- Setting up a new development machine is a long and painful process; nobody ever remembers what they have installed in their previous device. This guide is here to help you automate everything in your development setup and lets you enjoy the exciting feeling of getting a new machine.
 
 The guide has three parts: first is automating the installation of binaries and applications, then configuring code applications (vim, tmux, etc.) and customizing the operating system with dotfiles, and finally how to store and share them. I'll set up a MacBook Pro in all the articles, but you can always expand it to other surfaces like Linux.
 
-<!-- > If you have any trouble sounding condescending, find a UNIX user to show you how it's done. ~ Scott Adams -->
+> If you have any trouble sounding condescending, find a UNIX user to show you how it's done. ~ Scott Adams
 
 # Getting Started
 
@@ -134,4 +151,4 @@ done
 ```
 
 In the second part of this series, we'll create a bash function to update our bins.txt and casks.txt when a bin/cask is installed or removed.
-
+ -->
