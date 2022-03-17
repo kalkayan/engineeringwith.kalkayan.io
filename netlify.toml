@@ -1,5 +1,19 @@
 [build]
 publish = "public"
+command = "hugo"
+
+
+# -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # --
+#                                 _            _   _             
+#                                | |          | | (_)            
+#             _ __  _ __ ___   __| |_   _  ___| |_ _  ___  _ __  
+#            | '_ \| '__/ _ \ / _` | | | |/ __| __| |/ _ \| '_ \ 
+#            | |_) | | | (_) | (_| | |_| | (__| |_| | (_) | | | |
+#            | .__/|_|  \___/ \__,_|\__,_|\___|\__|_|\___/|_| |_|
+#            | |                                                 
+#            |_|
+# -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # --
+[context.production]
 command = "hugo --gc --minify"
 
 [context.production.environment]
@@ -8,17 +22,50 @@ HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 HUGO_HEAD_OPTIMIZE_STRATEGY = "dns-prefetch,preconnect,preload"
 
-[context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
-HUGO_ENV = "production"
+[[context.production.plugins]]
+package = "netlify-plugin-checklinks"
+
+[context.production.plugins.inputs]
+skipPatterns = ['https://fonts.gstatic.com']
+
+
+# -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # --
+#                             _                   
+#                            | |                  
+#                         ___| |_ __ _  __ _  ___ 
+#                        / __| __/ _` |/ _` |/ _ \
+#                        \__ \ || (_| | (_| |  __/
+#                        |___/\__\__,_|\__, |\___|
+#                                       __/ |     
+#                                      |___/ 
+# -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # --
+[context.stage]
+command = "hugo --gc --minify -b $STAGE_URL"
+
+[context.stage.environment]
+HUGO_VERSION = "0.93.2"
+HUGO_ENV = "stage"
 HUGO_ENABLEGITINFO = "true"
 HUGO_HEAD_OPTIMIZE_STRATEGY = "dns-prefetch,preconnect,preload"
 
+STAGE_URL = "https://stage.engineeringwith.kalkayan.io/"
+
+[[context.stage.plugins]]
+package = "netlify-plugin-checklinks"
+
+[context.stage.plugins.inputs]
+skipPatterns = ['https://fonts.gstatic.com']
+
+
+# Deploy preview
+[context.deploy-preview]
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+
+# Branch deploy
 [context.branch-deploy]
 command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
-[[plugins]]
-package = "netlify-plugin-checklinks"
 
-[plugins.inputs]
-skipPatterns = ['https://fonts.gstatic.com']
+
+

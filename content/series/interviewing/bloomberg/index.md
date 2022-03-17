@@ -1,7 +1,7 @@
 ---
 title: "Interviewing at Bloomberg"
 date: 2022-01-23T07:17:25+05:30
-draft: false
+draft: true
 description: If you have an upcoming Bloomberg interview for a software engineering role, this document is the collection of resources, questions. and tips that will most likely get you an offer.
 banner: "banner.png"
 tags: ["bloomberg"]
