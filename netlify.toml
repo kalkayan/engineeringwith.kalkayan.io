@@ -40,13 +40,15 @@ skipPatterns = ['https://fonts.gstatic.com']
 #                                      |___/ 
 # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # -- # --
 [context.stage]
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify -b $STAGE_URL"
 
 [context.stage.environment]
 HUGO_VERSION = "0.93.2"
 HUGO_ENV = "stage"
 HUGO_ENABLEGITINFO = "true"
 HUGO_HEAD_OPTIMIZE_STRATEGY = "dns-prefetch,preconnect,preload"
+
+STAGE_URL = "stage.engineeringwith.kalkayan.io"
 
 [[context.stage.plugins]]
 package = "netlify-plugin-checklinks"
