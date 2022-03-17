@@ -7,10 +7,7 @@ pluralizelisttitles = false
 summaryLength = 50
 enableGitInfo = true
 
-
 googleAnalytics = 'G-073MWF264K'
-
-
 
 [sitemap]
   changefreq = 'weekly'
