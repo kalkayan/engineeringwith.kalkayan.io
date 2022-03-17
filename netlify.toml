@@ -59,12 +59,12 @@ skipPatterns = ['https://fonts.gstatic.com']
 
 # Deploy preview
 [context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+command = "echo $DEPLOY_PRIME_URL && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 
 # Branch deploy
 [context.branch-deploy]
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+command = "echo $DEPLOY_PRIME_URL && hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 
 
