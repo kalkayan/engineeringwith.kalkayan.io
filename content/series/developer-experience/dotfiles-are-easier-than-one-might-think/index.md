@@ -3,24 +3,26 @@ title: "Dotfiles Are Easier Than You Might Think"
 date: 2022-02-11T01:52:15+05:30
 draft: true
 description: >
-    Dotfiles are all about boosting productivity by tailoring the machine's configurations to the developer's personalized needs. This article looks into the straightforward but powerful configurations one can have and master within a few minutes.
+    Using a terminal for your work is a much-needed next step in becoming a more productive software engineer. This article presents you effortless pieces of code which bear the power to elevate your productivity by many folds. 
 tags: ["tooling", "bash", "zsh"]
 categories: "development-experience"
 ---
 
-Regardless of the surge in graphical interfaces in the market, however fancy they are, most development work still happens via a terminal. Be it a bash, zsh, or fish, developers had leaned upon these terminals long before any graphical interface existed. Terminals have proven to be productive, and using them can be extraordinarily compelling but sometimes tiresome at the same time. 
+Regardless of the surge in graphical interfaces, however flowery they are, the shell is the goto for productivity, be it a bash, zsh, or fish; developers had leaned upon these terminals long before any graphical interface existed. Terminals have a proven history of productiveness, and using them can be extraordinarily compelling but sometimes tiresome at the same time. This article looks into the straightforward but powerful bash/zsh compositions one can master within a few minutes.
 
-Commands in the terminal can carry out incredibly complex procedures if executed dashingly. Consider such an example: we delete all the `.DS_Store` files in the current directory and sub-directories. We can use the `find` program to perform this by running the following command. 
+A terminal can carry out incredibly complex procedures if executed dashingly. Consider such an example: we want to delete all the `.DS_Store` files in the current and sub-directories. 
+
+We can use the `find` program to perform this by running the following command. 
 
 ```bash
 find . -type f -name '*.DS_Store' -ls -delete
 ```
 
-The command is pretty self-explanatory, `-type f` specifies to list only files with names ending with `.DS_Store` and the `-ls -delete`  part is for deleting the files in the list. 
+The command is pretty self-explanatory, `-type f` specifies to list only files with names ending with `.DS_Store`, and the `-ls -delete`  part is for deleting the files in the list. 
 
-Without a doubt, this single command is highly convenient and much needed in regular day work, especially when we don't want these files messing up a git repository (All the allies of `git add .` say Aye!). Not only this, it can work with any other type of file: say you need to clear all the log files whose name starts with python - Easy! Replace the`*.DS_Store` with `Python*.log` and so on.
+Without a doubt, this single command is highly convenient and much needed in regular day work, especially when we don't want these files messing up a git repository (allies of `git add .` say Aye!). Not only this, it can work with any other type of file: say you need to clear all the log files whose name starts with python - Easy! Replace the`*.DS_Store` with `Python*.log` and so on.
 
-Shortly, You may realize it's not that fun writing the whole command repeatedly. This is where the magic of bash and dotfiles come into action. You can **alias** the above long command to a single word by running the following:
+Shortly, You may realize it's not that fun writing the whole command repeatedly. This is where the magic of bash and dotfiles come into action. You can ** ** the above long command to a single word by running the following:
 
 ```bash
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
