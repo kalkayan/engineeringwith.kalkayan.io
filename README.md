@@ -7,9 +7,11 @@ Welcome to the source repository of the website - [engineeringwith.kalkayan.io](
 
 ## Introduction 
 
-The Engineering w/kalkayan is predominant built with [hugo](https://gohugo.io/) and currently uses [seydoux](https://github.com/kalkayan/seydoux) as its theme.
+The Engineering w/kalkayan is predominant built with [hugo](https://gohugo.io/) and currently uses [seydoux](https://github.com/kalkayan/seydoux) as its theme. The following diagram can help you understand the development and release process.
 
-### Develop the Website locally
+![Build process.png](static/build-process.png)
+
+## Develop the Website locally
 
 Clone the fork of this repo and its submodules by using `--recurse-submodules` option, run:
 
