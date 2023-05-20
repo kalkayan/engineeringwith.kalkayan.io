@@ -48,7 +48,7 @@ HUGO_ENV = "stage"
 HUGO_ENABLEGITINFO = "true"
 HUGO_HEAD_OPTIMIZE_STRATEGY = "dns-prefetch,preconnect,preload"
 
-STAGE_URL = "https://stage.engineeringwith.kalkayan.io/"
+STAGE_URL = "https://stageofengineeringwithkalkayan.netlify.app//"
 
 [[context.stage.plugins]]
 package = "netlify-plugin-checklinks"
