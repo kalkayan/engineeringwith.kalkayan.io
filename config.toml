@@ -25,10 +25,10 @@ googleAnalytics = 'G-073MWF264K'
 	#announcement = "Hi, thanks for checking the site but, its under construction. The articles and other data is neither complete nor reviewed."
 
 [params.props]
-    title = "Engineering w/kalkayan"
+    title = "Hello there[*](https://www.youtube.com/watch?v=rEq1Z0bjdwc), I'm Manish"
 	banner = "/banner.png"
 #subtitle = "Hi, I'm [Manish Sahani](https://www.linkedin.com/in/manishsahani/). I write here between standups, code reviews, and Jira stories."
-    subtitle = "There is plenty of stuff to do and not enough brains to break things. We are getting nobler in thoughts and weaker in action. Something has to change. Something has to give. So, I suggest, pick a damn thing and stick to it. ~ Something, I read"
+    subtitle = "I am a software development engineer at @[aws](https://aws.amazon.com/). Here, I work on backend services for monitoring console. Before this I was at @[adobe](https://www.adobe.com/), working on software and libraries that syncs the local design files (XD, psd, etc) to the shared adobe cloud. Read about few things I write here and there on - [engineeringwith.kalkayan.io](https://engineeringwith.kalkayan.io). This site is where I share my experiences and insight. Feel free to connect with me at @rec.manish.sahani@gmail.com to ask questions or simply say hello. By the way, that Star Wars reference above? Totally intentional. May the force be with you!"
 	
 
 [[params.social]]
